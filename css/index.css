@@ -8,6 +8,11 @@
 .container .header {
     margin-bottom: 0;
     padding-bottom: 0;
+    border-bottom: 1px solid #E9020E;
+}
+
+.container .header h3 {
+    color: #125097;
 }
 
 #mc_embed_signup #mc_embed_signup_scroll {
