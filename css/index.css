@@ -34,3 +34,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.container #mc_embed_signup input.subscribe {
+    background-color: #FB8651;
+}
+
+.container #mc_embed_signup input.subscribe:hover {
+    background-color: #E9020E;
+}
