@@ -1,3 +1,7 @@
+.title {
+    text-align: center
+}
+
 .container .jumbotron {
     background-color: transparent;
     border: none;
@@ -12,7 +16,7 @@
 }
 
 .container .header h3 {
-    color: #125097;
+    color: black;
 }
 
 #mc_embed_signup #mc_embed_signup_scroll {
@@ -32,7 +36,7 @@
 
 .marketing {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .container #mc_embed_signup input.subscribe {
@@ -41,4 +45,33 @@
 
 .container #mc_embed_signup input.subscribe:hover {
     background-color: #E9020E;
+}
+
+.container .fala {
+    color: #FB8651;
+    font-weight: bold;
+}
+
+.container .leitura {
+    color: #7AD13F;
+    font-weight: bold;
+}
+
+.container .escrita {
+    color: #E9020E;
+    font-weight: bold;
+}
+
+.container .subtitle {
+    font-size: 12pt;
+    margin-bottom: 20px;
+    color: #125097;
+}
+
+.container .subtitle .strong {
+    font-weight: bold;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-top: 10px;
 }
