@@ -1,6 +1,4 @@
-.title {
-    text-align: center
-}
+
 
 .container .jumbotron {
     background-color: transparent;
@@ -16,7 +14,7 @@
 }
 
 .container .header h3 {
-    color: black;
+    color: #125097;
 }
 
 #mc_embed_signup #mc_embed_signup_scroll {
@@ -30,8 +28,8 @@
 }
 
 .contact-us {
-    float: right;
-    font-style: italic
+    font-style: italic;
+    text-align: center;
 }
 
 .marketing {
