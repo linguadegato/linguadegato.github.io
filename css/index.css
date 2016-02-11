@@ -1,0 +1,12 @@
+.navbar-wrapper .navbar-header {
+    float: right;
+}
+
+.navbar-header .navbar-brand {
+    color: white;
+}
+
+.carousel .item {
+    height: 500px;
+    background-color: #2EAFDB;
+}

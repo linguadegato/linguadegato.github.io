@@ -47,11 +47,6 @@ body {
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  background-color: #2EAFDB;
-}
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -98,9 +93,6 @@ body {
 
 @media (min-width: 768px) {
   /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px;
