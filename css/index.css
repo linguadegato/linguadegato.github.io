@@ -7,10 +7,24 @@
 }
 
 .header {
-    top: 40px;
+    top: 25px;
     position: absolute;
     left: 50%;
     z-index: 1000;
+}
+
+.header .logo {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.header .title {
+    width: 350px;
+    margin-right: 10px;
+}
+
+.header .appstore-download {
+    width: 130px;
 }
 
 .header .icon {
@@ -29,7 +43,7 @@
 
 .ipad-screen {
     width: 80%;
-    margin-bottom: -40px;
+    margin-bottom: -10%;
 }
 
 h2.team-title {
