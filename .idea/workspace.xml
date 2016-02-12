@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a50fd25-dbf1-4984-aef9-9b77deb7ce94" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/ipad/1.png" afterPath="$PROJECT_DIR$/images/ipad/1.png" />
     </list>
     <ignored path="linguadegato.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
