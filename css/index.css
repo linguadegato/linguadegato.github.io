@@ -50,6 +50,9 @@
 .carousel .item {
     height: 550px;
     background-color: #2EAFDB;
+    background-image: url('/images/background.png');
+    background-size: cover;
+    background-
 }
 
 .ipad-screen {
