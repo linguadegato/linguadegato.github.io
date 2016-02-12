@@ -6,7 +6,28 @@
     color: white;
 }
 
+.header {
+    top: 40px;
+    position: absolute;
+    left: 50%;
+    z-index: 1000;
+}
+
+.header .icon {
+    margin-right: 20px;
+}
+
+.header-content {
+    position: relative;
+    left: -50%;
+}
+
 .carousel .item {
-    height: 500px;
+    height: 550px;
     background-color: #2EAFDB;
+}
+
+.ipad-screen {
+    width: 80%;
+    margin-bottom: -40px;
 }
