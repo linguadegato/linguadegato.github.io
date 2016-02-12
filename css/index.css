@@ -6,6 +6,15 @@
     color: white;
 }
 
+.navbar-wrapper {
+    z-index: 2000;
+}
+
+.facebook-icon {
+    width: 50px;
+    margin-top: 10px;
+}
+
 .header {
     top: 25px;
     position: absolute;
