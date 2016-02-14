@@ -59,6 +59,18 @@
     margin-bottom: -10%;
 }
 
+h2.divertir {
+    color: #F7A93C;
+}
+
+h2.desenvolver {
+    color: #EA5194;
+}
+
+h2.aproximar {
+    color: #AAC821;
+}
+
 .video {
     display: block;
     margin: auto;
