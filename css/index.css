@@ -60,6 +60,11 @@
     margin-bottom: -10%;
 }
 
+.video {
+    display: block;
+    margin: auto;
+}
+
 h2.sub-title {
     text-align: center;
     margin-top: 0;
