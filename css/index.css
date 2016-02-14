@@ -1,75 +1,93 @@
-
-
-.container .jumbotron {
-    background-color: transparent;
-    border: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
+.navbar-wrapper .navbar-header {
+    float: right;
 }
 
-.container .header {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: 1px solid #E9020E;
+.navbar-header .navbar-brand {
+    color: white;
 }
 
-.container .header h3 {
-    color: #125097;
+.navbar-wrapper {
+    z-index: 2000;
 }
 
-#mc_embed_signup #mc_embed_signup_scroll {
-    width: 690px;
-}
-
-.container .jumbotron, .container-fluid .jumbotron {
-    padding-right: 0;
-    padding-left: 0;
-    padding-top: 40px;
-}
-
-.contact-us {
-    font-style: italic;
-    text-align: center;
-}
-
-.marketing {
+.facebook-icon {
+    width: 50px;
     margin-top: 10px;
-    margin-bottom: 0;
 }
 
-.container #mc_embed_signup input.subscribe {
-    background-color: #FB8651;
+.header {
+    top: 25px;
+    position: absolute;
+    left: 50%;
+    z-index: 1000;
 }
 
-.container #mc_embed_signup input.subscribe:hover {
-    background-color: #E9020E;
+.header .logo {
+    width: 80px;
+    margin-right: 10px;
 }
 
-.container .fala {
-    color: #FB8651;
-    font-weight: bold;
+.header .title {
+    width: 350px;
+    margin-right: 10px;
 }
 
-.container .leitura {
-    color: #7AD13F;
-    font-weight: bold;
+.appstore-download {
+    width: 160px;
+    display: block;
+    margin: auto;
 }
 
-.container .escrita {
-    color: #E9020E;
-    font-weight: bold;
+.header .icon {
+    margin-right: 20px;
 }
 
-.container .subtitle {
-    font-size: 12pt;
-    margin-bottom: 20px;
-    color: #125097;
+.header-content {
+    position: relative;
+    left: -50%;
 }
 
-.container .subtitle .strong {
-    font-weight: bold;
+.carousel .item {
+    height: 550px;
+    background-color: #2EAFDB;
+    background-image: url('/images/background.png');
+    background-size: cover;
 }
 
-.container .jumbotron, .container-fluid .jumbotron {
-    padding-top: 10px;
+.ipad-screen {
+    width: 80%;
+    margin-bottom: -10%;
+}
+
+h2.divertir {
+    color: #F7A93C;
+}
+
+h2.desenvolver {
+    color: #EA5194;
+}
+
+h2.aproximar {
+    color: #AAC821;
+}
+
+.video {
+    display: block;
+    margin: auto;
+}
+
+h2.sub-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+footer .footer-item {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
 }
