@@ -74,6 +74,8 @@ h2.aproximar {
 .video {
     display: block;
     margin: auto;
+    width: 650px;
+    height: 450px;
 }
 
 h2.sub-title {
