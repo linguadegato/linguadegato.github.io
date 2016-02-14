@@ -52,7 +52,6 @@
     background-color: #2EAFDB;
     background-image: url('/images/background.png');
     background-size: cover;
-    background-
 }
 
 .ipad-screen {
@@ -73,4 +72,10 @@ h2.sub-title {
 
 footer {
     margin-top: 50px;
+}
+
+footer .footer-item {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
 }
