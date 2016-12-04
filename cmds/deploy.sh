@@ -1,4 +1,5 @@
 if git diff-index --quiet HEAD --; then
+  bundle exec middleman build
   git checkout master
   cp -r build/* .
   git add .
