@@ -34,6 +34,8 @@ end
 #   end
 # end
 
+activate :i18n
+
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
