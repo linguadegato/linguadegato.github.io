@@ -1,3 +1,55 @@
 ---
 en:
   contact: "Contact"
+  contact_message: "Do you wanna talk to us? Got a question or sugestion?"
+  contact_email_message: "Send an email to: "
+  top_message: "Back to top"
+  privacy: "Privacy"
+  support: "Support"
+  previous: "Previous"
+  next: "Next"
+
+  team1_name: "Alline Kobayashi"
+  team1_description: "Brazilian living in Budapest since November 2016, she is passionate about children, education and technology. Graduated in Computer Science, studied Neurolinguistics in her master's degree between the years of 2013 and 2016 at State University of Campinas (UNICAMP, Campinas-SP, Brazil). During her masters, she worked with children with difficulties in literacy and criticized the pathologization of childhood currently lived in Brazil. Through the union of her knowledge in computing and the experience during her masters, was created the app Língua de Gato."
+
+  pillar1_title: "Have fun"
+  pillar1_description: "Create crosswords for kids to have fun in the world of reading and writing from elements around them."
+  pillar2_title: "Teach"
+  pillar2_description: "Considering the complexity of acquiring reading and writing and the particularities of each child, we created a customizable environment in which you can take picures or record audios to create games."
+  pillar3_title: "Be together"
+  pillar3_description: "We deeply believe that learning takes place with the participation of others. Thus, we wish to enrich the interaction between kids and their parents, teachers and friends."
+
+  section1_title: "About us"
+  section2_title: "Related articles"
+  section3_title: "Special thanks"
+
+  article1_title: "Língua de Gato: usando a linguagem de forma divertida"
+  article1_link: "http://www.br-ie.org/pub/index.php/wcbie/article/view/6043"
+  article1_autor: "Alline Kobayashi, Fernanda Freire, Vítor Rocha, André Scherma"
+  article1_event: "CBIE 2015: V Congresso Brasileiro de Informática na Educação e X Conferência Latino-Americana de Objetos e Tecnologias de Aprendizagem"
+  article1_description: ""
+
+  article2_title: "Fala, Leitura e Escrita em Aplicativos Móveis: Desafios de uma Abordagem Discursiva"
+  article2_link: "http://ebooks.pucrs.br/edipucrs/anais/csbc/assets/2016/desafie!/13.pdf"
+  article2_autor: "Alline Kobayashi, Fernanda Freire"
+  article2_event: "CSBC 2016: DesafIE - 5º Workshop de Desafios da Computação aplicada à Educação"
+  article2_description: ""
+
+  article3_title: "Desenvolvimento de aplicativo móvel para ler/escrever: uma abordagem discursiva"
+  article3_link: ""
+  article3_autor: "Alline Kobayashi, Fernanda Freire"
+  article3_event: "RIA v.12 n.2 (feb. 2017): Revista de Informática Aplicada"
+  article3_description: ""
+
+  thanks1_name: "Taiane Moretti"
+  thanks1_description: "Designer graduated from Facamp (Faculdades de Campinas, Campinas-SP, Brazil) with a specialization in Graphic Design from State University of Campinas (UNICAMP, Campinas-SP, Brazil). She works with web design and is Gabi's mother, who inspired her in the project Língua de Gato."
+  thanks1_linkedin: "https://www.linkedin.com/in/taiane-moretti-8146668b"
+  thanks1_portfolio: "Portfolio"
+  thanks1_portfolio_link: "https://www.behance.net/taianemoretti"
+
+  thanks2_name: "André Soléo"
+  thanks2_description: "iOS Developer graduated in Philosophy from the State University of Campinas (UNICAMP, Campinas-SP, Brazil). André worked on the creation of Língua de Gato in 2015 during the iOS Development course at BEPiD (Brazilian Education Project for iOS Development, Campinas-SP, Brazil)."
+
+  thanks3_name: "Jheniffer Leonardi"
+  thanks3_description: "iOS Developer, graduated in 2015 in Systems Analysis and Development at Faculty of Technology of São Paulo (FATEC, Americana-SP, Brazil). She believes that children should have their individuality and likes respected. Jheniffer worked on the creation of Língua de Gato in 2015 during the iOS Development course at BEPiD (Brazilian Education Project for iOS Development, Campinas-SP, Brazil)."
+  thanks3_linkedin: "https://br.linkedin.com/in/jhenifferleonardi"

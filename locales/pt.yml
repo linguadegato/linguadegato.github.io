@@ -1,3 +1,55 @@
 ---
 pt:
   contact: "Contato"
+  contact_message: "Quer conversar conosco? Tem alguma dúvida ou sugestão?"
+  contact_email_message: "Envie um e-mail para: "
+  top_message: "Voltar para o início"
+  privacy: "Privacidade"
+  support: "Suporte"
+  previous: "Anterior"
+  next: "Próximo"
+
+  team1_name: "Alline Kobayashi"
+  team1_description: "Brasileira morando em Budapeste desde novembro de 2016, é apaixonada por crianças, educação e tecnologia. Graduou-se em Ciência da Computação e resolveu aventurar-se pela área de humanas ao cursar o mestrado em Neurolinguística entre os anos de 2013 e 2016, ambos na Universidade Estadual de Campinas (UNICAMP, Campinas-SP, Brasil). Duranto o mestrado, trabalhou com crianças e jovens com dificuldades escolares relativas à linguagem e atuou na contra mão do processo de patologização vivido atualmente no Brasil."
+
+  pillar1_title: "Divertir"
+  pillar1_description: "O Língua de Gato permite a criação de palavras-cruzadas para que as crianças divirtam-se no universo da leitura e da escrita a partir de elementos a sua volta."
+  pillar2_title: "Desenvolver"
+  pillar2_description: "Considerando a complexidade da aquisição da leitura e da escrita e as particularidades de cada criança, criamos um ambiente customizável no qual as palavras-cruzadas podem ser construídas a partir de fotos e/ou áudios."
+  pillar3_title: "Aproximar"
+  pillar3_description: "Acreditamos profundamente que o aprendizado se dá com a participação do outro. Assim, desejamos enriquecer a interação entre as crianças e seus pais, professores e amigos, por meio do Língua de Gato."
+
+  section1_title: "Quem somos"
+  section2_title: "Artigos relacionados"
+  section3_title: "Agradecimentos Especiais"
+
+  article1_title: "Língua de Gato: usando a linguagem de forma divertida"
+  article1_link: "http://www.br-ie.org/pub/index.php/wcbie/article/view/6043"
+  article1_autor: "Alline Kobayashi, Fernanda Freire, Vítor Rocha, André Scherma"
+  article1_event: "CBIE 2015: V Congresso Brasileiro de Informática na Educação e X Conferência Latino-Americana de Objetos e Tecnologias de Aprendizagem"
+  article1_description: ""
+
+  article2_title: "Fala, Leitura e Escrita em Aplicativos Móveis: Desafios de uma Abordagem Discursiva"
+  article2_link: "http://ebooks.pucrs.br/edipucrs/anais/csbc/assets/2016/desafie!/13.pdf"
+  article2_autor: "Alline Kobayashi, Fernanda Freire"
+  article2_event: "CSBC 2016: DesafIE - 5º Workshop de Desafios da Computação aplicada à Educação"
+  article2_description: ""
+
+  article3_title: "Desenvolvimento de aplicativo móvel para ler/escrever: uma abordagem discursiva"
+  article3_link: ""
+  article3_autor: "Alline Kobayashi, Fernanda Freire"
+  article3_event: "RIA v.12 n.2 (fev. 2017): Revista de Informática Aplicada"
+  article3_description: ""
+
+  thanks1_name: "Taiane Moretti"
+  thanks1_description: "Designer formada pela Facamp (Faculdades de Campinas, Campinas-SP, Brasil) com especialização em Design Gráfico pela Universidade Estadual de Campinas (UNICAMP, Campinas-SP, Brasil). Trabalha com web design e é mãe da Gabi, que a inspirou no projeto Língua de Gato."
+  thanks1_linkedin: "https://www.linkedin.com/in/taiane-moretti-8146668b"
+  thanks1_portfolio: "Portfólio"
+  thanks1_portfolio_link: "https://www.behance.net/taianemoretti"
+
+  thanks2_name: "André Soléo"
+  thanks2_description: "Desenvolvedor iOS formado em Filosofia pela Universidade Estadual de Campinas (UNICAMP, Campinas-SP, Brasil). André trabalhou na criação do Língua de Gato durante o ano de 2015 quando cursava o curso de iOS no BEPiD (Brazilian Education Project for iOS Development, Campinas-SP, Brasil)."
+
+  thanks3_name: "Jheniffer Leonardi"
+  thanks3_description: "Desenvolvedora iOS, formada em 2015 em Análise e Desenvolvimento de Sistemas pela FATEC Americana. Acredita que crianças devem ter suas particularidades e gostos respeitados. Jheniffer trabalhou na criação do Língua de Gato durante o ano de 2015 quando cursava o curso de iOS no BEPiD (Brazilian Education Project for iOS Development, Campinas-SP, Brasil)."
+  thanks3_linkedin: "https://br.linkedin.com/in/jhenifferleonardi"
