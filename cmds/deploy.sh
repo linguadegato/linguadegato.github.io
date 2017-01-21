@@ -3,7 +3,7 @@ if git diff-index --quiet HEAD --; then
   git checkout master
   cp -r build/* .
   git add .
-  git ci -m "Deploy"
+  git commit -m "Deploy"
   git push
 
   git checkout source
