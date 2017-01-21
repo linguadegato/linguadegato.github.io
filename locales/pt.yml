@@ -2,7 +2,7 @@
 pt:
   language: "English"
   language_link: ".."
-  language_flag: "images/languages/en.png"
+  language_flag: "/images/languages/en.png"
   contact: "Contato"
   contact_message: "Quer conversar conosco? Tem alguma dúvida ou sugestão?"
   contact_email_message: "Envie um e-mail para: "
