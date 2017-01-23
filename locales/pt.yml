@@ -3,6 +3,7 @@ pt:
   language: "English"
   language_link: ".."
   language_flag: "/images/languages/en.png"
+  appStore_image: "/images/localizable/appStore/appStore-download-pt.svg"
   contact: "Contato"
   contact_message: "Quer conversar conosco? Tem alguma dúvida ou sugestão?"
   contact_email_message: "Envie um e-mail para: "
