@@ -6,30 +6,40 @@ title: Língua de Gato app
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body id="myPage">
 
 <!-- Navbar -->
 <div class="w3-top">
 
- <ul class="w3-navbar w3-theme-d2 w3-left-align">
-  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-    <a class="w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  </li>
-  <li><a href="#" class="w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a></li>
-  <li class="w3-hide-small"><a href="#pillars" class="w3-hover-white">Pillars</a></li>
-  <li class="w3-hide-small"><a href="#articles" class="w3-hover-white">Articles</a></li>
-  <li class="w3-hide-small"><a href="#team" class="w3-hover-white">Team</a></li>
-  <li class="w3-hide-small"><a href="#thanks" class="w3-hover-white">Thanks</a></li>
-  <li class="w3-hide-small"><a href="#contact" class="w3-hover-white">Contact</a></li>
+  <!-- w3-navbar w3-theme-d2 w3-left-align -->
+  <ul class="w3-navbar section-green-white w3-left-align">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+      <a class="w3-hover-white section-green-white" href="javascript:void(0);" onclick="openNav()">
+        <!-- <i class="fa fa-bars"> -->
+          <!-- Menu icon -->
+          <div class="menu-icon">
+            <div class="menu-bar1"></div>
+            <div class="menu-bar2"></div>
+            <div class="menu-bar3"></div>
+          </div>
+        <!-- </i> -->
+      </a>
+    </li>
+    <li><a href="#" class="w3-hover-white" style="padding-top: 2px;">
+      <img src="/images/logo/icon.png" alt="">
+    </a></li>
+    <li class="w3-hide-small"><a href="#articles" class="w3-hover-white">Articles</a></li>
+    <li class="w3-hide-small"><a href="#team" class="w3-hover-white">Team</a></li>
+    <li class="w3-hide-small"><a href="#thanks" class="w3-hover-white">Thanks</a></li>
+    <li class="w3-hide-small"><a href="#contact" class="w3-hover-white">Contact</a></li>
  </ul>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
-    <ul class="w3-navbar w3-left-align w3-theme">
-      <li><a href="#pillars" class="w3-hover-white">Pillars</a></li>
+  <!-- navDemo:
+  escondido: w3-hide w3-hide-large w3-hide-medium
+  aparece: w3-hide w3-hide-large w3-hide-medium w3-show-->
+  <div id="navbarSmall" class="w3-hide w3-hide-large w3-hide-medium">
+    <ul class="w3-navbar w3-left-align section-green-white">
       <li><a href="#team" class="w3-hover-white">Team</a></li>
       <li><a href="#articles" class="w3-hover-white">Articles</a></li>
       <li><a href="#thanks" class="w3-hover-white">Thanks</a></li>
@@ -40,8 +50,8 @@ title: Língua de Gato app
 </div>
 
 <!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity" style="background:#2EAFDB">
-  <img src="/images/background.png" alt="" style="width:100%;min-height:350px;max-height:600px;">
+<div class="w3-display-container w3-animate-opacity">
+  <img src="/images/background/background_WhiteBlue.jpg" alt="" style="width:100%;min-height:350px;max-height:600px;">
   <div class="w3-container w3-display-bottomleft w3-margin-bottom">
     <img src="/images/localizable/appStore/appStore-download-en.svg" style="width: 160px">
   </div>
@@ -75,7 +85,7 @@ title: Língua de Gato app
 </div>
 
 <!-- Articles Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="articles">
+<div class="w3-row-padding w3-padding-64 section-pink-white" id="articles">
 
   <div class="w3-quarter">
     <h2><%= t(:section2_title) %></h2>
@@ -119,7 +129,7 @@ title: Língua de Gato app
 </div>
 
 <!-- Thanks Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="thanks">
+<div class="w3-row-padding w3-padding-64 section-orange-white" id="thanks">
 
   <div class="w3-quarter">
     <h2><%= t(:section3_title) %></h2>
@@ -173,33 +183,21 @@ title: Língua de Gato app
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+<footer class="w3-container w3-padding-32 section-green-white w3-center">
   <img src="/images/localizable/appStore/appStore-download-en.svg" style="width: 160px">
 
   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small"><%= t(:top_message) %></span>
-    <a class="w3-btn w3-theme" href="#myPage"><span class="w3-xlarge">
+    <span class="w3-text w3-padding popup-message w3-hide-small"><%= t(:top_message) %></span>
+    <a class="w3-btn section-green-white" href="#"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>
 </footer>
 
 <!-- Script For Side Navigation -->
 <script>
-function w3_open() {
-    var x = document.getElementById("mySidenav");
-    x.style.width = "300px";
-    x.style.textAlign = "center";
-    x.style.fontSize = "40px";
-    x.style.paddingTop = "10%";
-    x.style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidenav").style.display = "none";
-}
-
 // Used to toggle the menu on smaller screens when clicking on the menu button
 function openNav() {
-    var x = document.getElementById("navDemo");
+    var x = document.getElementById("navbarSmall");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
     } else {
