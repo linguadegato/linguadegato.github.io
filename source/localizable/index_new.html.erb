@@ -4,207 +4,229 @@ title: Língua de Gato app
 <!DOCTYPE html>
 <html>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<body id="myPage">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Navbar -->
-<div class="w3-top">
+  <body>
 
-  <!-- w3-navbar w3-theme-d2 w3-left-align -->
-  <ul class="w3-navbar section-green-white w3-left-align">
-    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-      <a class="w3-hover-white section-green-white" href="javascript:void(0);" onclick="openNav()">
-        <!-- <i class="fa fa-bars"> -->
-          <!-- Menu icon -->
-          <div class="menu-icon">
-            <div class="menu-bar1"></div>
-            <div class="menu-bar2"></div>
-            <div class="menu-bar3"></div>
+  <!-- ******* Navbar ******* -->
+    <div class="top" id="navbar">
+
+      <!-- Navbar on not small screens: list -->
+      <ul class="navbar colors-green-white left-align">
+        <!-- 1st element: menu icon [small screen] -->
+        <li class="hide-medium hide-large w3-opennav w3-right">
+          <a class="hover-colors-white-black colors-green-white" href="javascript:void(0);" onclick="openNav()">
+            <!-- Icon of the menu (3 horizontal bars) on the right side on small screens-->
+            <div class="menu-icon">
+              <div class="menu-bar1"></div>
+              <div class="menu-bar2"></div>
+              <div class="menu-bar3"></div>
+            </div>
+          </a>
+        </li>
+
+        <!-- 2nd element: language flag -->
+        <!-- <li class=" w3-right">
+          <a href="<%= t(:language_link) %>" class="hover-colors-white-black" style="padding-top: 2px;">
+            <img src="<%= t(:language_flag) %>" alt="">
+          </a>
+        </li> -->
+
+        <!-- 3rd element: home icon (Lingua de Gato logo) -->
+        <li>
+          <a href="#" class="hover-colors-white-black" style="padding-top: 2px;">
+            <img src="/images/logo/icon.png" alt="">
+          </a>
+        </li>
+
+        <!-- Other element: menu options (will not appear on small screen) -->
+        <li class="hide-small"><a href="#articles" class="hover-colors-white-black">Articles</a></li>
+        <li class="hide-small"><a href="#team" class="hover-colors-white-black">Team</a></li>
+        <li class="hide-small"><a href="#thanks" class="hover-colors-white-black">Thanks</a></li>
+        <li class="hide-small"><a href="#contact" class="hover-colors-white-black">Contact</a></li>
+     </ul>
+
+      <!-- Navbar on small screens (change classes when it is suposed to appear or not)-->
+      <div id="navbarSmall" class="hide hide-large hide-medium">
+        <ul class="navbar left-align colors-green-white">
+          <li><a href="#team" class="hover-colors-white-black">Team</a></li>
+          <li><a href="#articles" class="hover-colors-white-black">Articles</a></li>
+          <li><a href="#thanks" class="hover-colors-white-black">Thanks</a></li>
+          <li><a href="#contact" class="hover-colors-white-black">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  <!-- *******  Header ******* -->
+    <div class="w3-display-container w3-animate-opacity" id="header">
+      <img src="/images/background/background_WhiteBlue.jpg" alt="" style="width:100%;min-height:350px;max-height:600px;">
+    </div>
+
+  <!-- *******  Pillars Container ******* -->
+    <div class="padding-64 text-center w3-container" id="pillars">
+      <h2>OUR PILLARS</h2>
+
+      <div class="w3-row"><br>
+
+        <div class="w3-third">
+          <img src="/images/pillars/fun.jpg" alt="Fun" style="width:45%" class="w3-circle hover-opacity">
+          <h3><%= t(:pillar1_title) %></h3>
+          <p><%= t(:pillar1_description) %></p>
+        </div>
+
+        <div class="w3-third">
+          <img src="/images/pillars/teach.jpg" alt="Teach" style="width:45%" class="w3-circle hover-opacity">
+          <h3><%= t(:pillar2_title) %></h3>
+          <p><%= t(:pillar2_description) %></p>
+        </div>
+
+        <div class="w3-third">
+          <img src="/images/pillars/together.jpg" alt="Together" style="width:45%" class="w3-circle hover-opacity">
+          <h3><%= t(:pillar3_title) %></h3>
+          <p><%= t(:pillar3_description) %></p>
+        </div>
+
+      </div>
+    </div>
+
+  <!-- *******  Articles Row ******* -->
+    <div class="padding-64 colors-pink-white w3-row-padding" id="articles">
+
+      <div class="w3-quarter">
+        <h2><%= t(:section2_title) %></h2>
+      </div>
+
+      <div class="w3-quarter">
+      <div class="w3-card-2 colors-white-black">
+        <!-- <img src="/images/logo/icon.png" alt="" style="width:50%"> -->
+        <div class="w3-container">
+        <h3><%= t(:article2_title) %></h3>
+        <h4><%= t(:article2_event) %></h4>
+        <p><%= t(:article2_autor) %></p>
+        </div>
+        </div>
+      </div>
+
+      <div class="w3-quarter">
+      <div class="w3-card-2 colors-white-black">
+        <!-- <img src="/images/logo/icon.png" alt="" style="width:50%"> -->
+        <div class="w3-container">
+        <h3><%= t(:article1_title) %></h3>
+        <h4><%= t(:article1_event) %></h4>
+        <p><%= t(:article1_autor) %></p>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+  <!-- *******  Team Row ******* -->
+    <div class="padding-64 text-center w3-row-padding" id="team">
+        <h2><%= t(:section1_title) %></h2>
+        <br>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/images/team/alline.png" alt="Alline Kobayashi" style="width:45%" class="w3-circle hover-opacity">
+          <h3><%= t(:team1_name) %></h3>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <p><%= t(:team1_description) %></p>
+        </div>
+    </div>
+
+  <!-- *******  Thanks Row ******* -->
+    <div class="padding-64 colors-orange-white w3-row-padding" id="thanks">
+
+      <div class="w3-quarter">
+        <h2><%= t(:section3_title) %></h2>
+      </div>
+
+      <div class="w3-quarter">
+        <div class="w3-card-2 colors-white-black">
+          <div class="w3-container">
+            <h3><%= t(:thanks1_name) %></h3>
+            <p><%= t(:thanks1_description) %></p>
+            <p>
+              <a class="btn btn-default" href="<%= t(:thanks1_linkedin) %>" role="button" target="_blank">LinkedIn</a>
+              <a class="btn btn-default" href="<%= t(:thanks1_portfolio_link) %>" role="button" target="_blank"><%= t(:thanks1_portfolio) %></a>
+            </p>
           </div>
-        <!-- </i> -->
+        </div>
+      </div>
+
+      <div class="w3-quarter">
+        <div class="w3-card-2 colors-white-black">
+          <div class="w3-container">
+            <h3><%= t(:thanks2_name) %></h3>
+            <p><%= t(:thanks2_description) %></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-quarter">
+        <div class="w3-card-2 colors-white-black">
+          <div class="w3-container">
+            <h3><%= t(:thanks3_name) %></h3>
+            <p><%= t(:thanks3_description) %></p>
+            <p>
+              <a class="btn btn-default" href="<%= t(:thanks3_linkedin) %>" role="button" target="_blank">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  <!-- *******  Contact Container ******* -->
+    <div class="padding-64 colors-lightgrey-black w3-container" id="contact">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          <div class="padding-16">
+            <span class="w3-xlarge underline-pink">
+              <%= t(:contact) %>
+            </span>
+          </div>
+          <p><%= t(:contact_message) %></p>
+          <p>
+            <img src="/images/mail-pink.png" alt="">
+            contato@linguadegatoapp.com.br
+          </p>
+        </div>
+      </div>
+    </div>
+
+  <!-- *******  Footer ******* -->
+    <footer class="padding-32 colors-green-white text-center w3-container">
+
+      <!-- Footer: AppStore link -->
+      <a class="w3-btn-floating w3-teal" href="https://itunes.apple.com/app/id1071864943?mt=8" title="Link to AppStore" target="_blank">
+        <img src="/images/localizable/appStore/appStore-download-en.svg" style="width: 160px">
       </a>
-    </li>
-    <li><a href="#" class="w3-hover-white" style="padding-top: 2px;">
-      <img src="/images/logo/icon.png" alt="">
-    </a></li>
-    <li class="w3-hide-small"><a href="#articles" class="w3-hover-white">Articles</a></li>
-    <li class="w3-hide-small"><a href="#team" class="w3-hover-white">Team</a></li>
-    <li class="w3-hide-small"><a href="#thanks" class="w3-hover-white">Thanks</a></li>
-    <li class="w3-hide-small"><a href="#contact" class="w3-hover-white">Contact</a></li>
- </ul>
 
-  <!-- Navbar on small screens -->
-  <!-- navDemo:
-  escondido: w3-hide w3-hide-large w3-hide-medium
-  aparece: w3-hide w3-hide-large w3-hide-medium w3-show-->
-  <div id="navbarSmall" class="w3-hide w3-hide-large w3-hide-medium">
-    <ul class="w3-navbar w3-left-align section-green-white">
-      <li><a href="#team" class="w3-hover-white">Team</a></li>
-      <li><a href="#articles" class="w3-hover-white">Articles</a></li>
-      <li><a href="#thanks" class="w3-hover-white">Thanks</a></li>
-      <li><a href="#contact" class="w3-hover-white">Contact</a></li>
-    </ul>
-  </div>
-
-</div>
-
-<!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
-  <img src="/images/background/background_WhiteBlue.jpg" alt="" style="width:100%;min-height:350px;max-height:600px;">
-  <div class="w3-container w3-display-bottomleft w3-margin-bottom">
-    <img src="/images/localizable/appStore/appStore-download-en.svg" style="width: 160px">
-  </div>
-</div>
-
-<!-- Pillars Container -->
-<div class="w3-container w3-padding-64 w3-center" id="pillars">
-  <h2>OUR PILLARS</h2>
-
-  <div class="w3-row"><br>
-
-    <div class="w3-third">
-      <img src="/images/pillars/fun.jpg" alt="Fun" style="width:45%" class="w3-circle w3-hover-opacity">
-      <h3><%= t(:pillar1_title) %></h3>
-      <p><%= t(:pillar1_description) %></p>
-    </div>
-
-    <div class="w3-third">
-      <img src="/images/pillars/teach.jpg" alt="Teach" style="width:45%" class="w3-circle w3-hover-opacity">
-      <h3><%= t(:pillar2_title) %></h3>
-      <p><%= t(:pillar2_description) %></p>
-    </div>
-
-    <div class="w3-third">
-      <img src="/images/pillars/together.jpg" alt="Together" style="width:45%" class="w3-circle w3-hover-opacity">
-      <h3><%= t(:pillar3_title) %></h3>
-      <p><%= t(:pillar3_description) %></p>
-    </div>
-
-  </div>
-</div>
-
-<!-- Articles Row -->
-<div class="w3-row-padding w3-padding-64 section-pink-white" id="articles">
-
-  <div class="w3-quarter">
-    <h2><%= t(:section2_title) %></h2>
-  </div>
-
-  <div class="w3-quarter">
-  <div class="w3-card-2 w3-white">
-    <!-- <img src="/images/logo/icon.png" alt="" style="width:50%"> -->
-    <div class="w3-container">
-    <h3><%= t(:article2_title) %></h3>
-    <h4><%= t(:article2_event) %></h4>
-    <p><%= t(:article2_autor) %></p>
-    </div>
-    </div>
-  </div>
-
-  <div class="w3-quarter">
-  <div class="w3-card-2 w3-white">
-    <!-- <img src="/images/logo/icon.png" alt="" style="width:50%"> -->
-    <div class="w3-container">
-    <h3><%= t(:article1_title) %></h3>
-    <h4><%= t(:article1_event) %></h4>
-    <p><%= t(:article1_autor) %></p>
-    </div>
-    </div>
-  </div>
-
-</div>
-
-<!-- Team Row -->
-<div class="w3-row-padding w3-center w3-padding-64" id="team">
-    <h2><%= t(:section1_title) %></h2>
-    <br>
-    <div class="w3-third w3-margin-bottom">
-      <img src="/images/team/alline.png" alt="Alline Kobayashi" style="width:45%" class="w3-circle w3-hover-opacity">
-      <h3><%= t(:team1_name) %></h3>
-    </div>
-    <div class="w3-third w3-margin-bottom">
-      <p><%= t(:team1_description) %></p>
-    </div>
-</div>
-
-<!-- Thanks Row -->
-<div class="w3-row-padding w3-padding-64 section-orange-white" id="thanks">
-
-  <div class="w3-quarter">
-    <h2><%= t(:section3_title) %></h2>
-  </div>
-
-  <div class="w3-quarter">
-    <div class="w3-card-2 w3-white">
-      <div class="w3-container">
-        <h3><%= t(:thanks1_name) %></h3>
-        <p><%= t(:thanks1_description) %></p>
-        <p>
-          <a class="btn btn-default" href="<%= t(:thanks1_linkedin) %>" role="button" target="_blank">LinkedIn</a>
-          <a class="btn btn-default" href="<%= t(:thanks1_portfolio_link) %>" role="button" target="_blank"><%= t(:thanks1_portfolio) %></a>
-        </p>
+      <!-- Footer: button to top -->
+      <div class="top-btn w3-right">
+        <span class="display-none padding-medium colors-green-white hide-small"><%= t(:top_message) %></span>
+        <a class="w3-btn colors-green-white" href="#">
+          <span class="w3-xlarge">
+              <img class="w3-btn-floating w3-teal" src="/images/arrow-up/up-white.png">
+          </span>
+        </a>
       </div>
-    </div>
-  </div>
+    </footer>
 
-  <div class="w3-quarter">
-    <div class="w3-card-2 w3-white">
-      <div class="w3-container">
-        <h3><%= t(:thanks2_name) %></h3>
-        <p><%= t(:thanks2_description) %></p>
-      </div>
-    </div>
-  </div>
+  <!-- *******  Scripts ******* -->
+    <script>
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+          var x = document.getElementById("navbarSmall");
+          if (x.className.indexOf("show-block") == -1) {
+              x.className += " show-block";
+          } else {
+              x.className = x.className.replace(" show-block", "");
+          }
+      }
+    </script>
 
-  <div class="w3-quarter">
-    <div class="w3-card-2 w3-white">
-      <div class="w3-container">
-        <h3><%= t(:thanks3_name) %></h3>
-        <p><%= t(:thanks3_description) %></p>
-        <p>
-          <a class="btn btn-default" href="<%= t(:thanks3_linkedin) %>" role="button" target="_blank">LinkedIn</a>
-        </p>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar"><%= t(:contact) %></span></div>
-      <p><%= t(:contact_message) %></p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> contato@linguadegatoapp.com.br</p>
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 section-green-white w3-center">
-  <img src="/images/localizable/appStore/appStore-download-en.svg" style="width: 160px">
-
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding popup-message w3-hide-small"><%= t(:top_message) %></span>
-    <a class="w3-btn section-green-white" href="#"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
-
-<!-- Script For Side Navigation -->
-<script>
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-    var x = document.getElementById("navbarSmall");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
-</body>
+  </body>
 </html>
