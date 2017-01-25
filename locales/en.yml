@@ -3,15 +3,28 @@ en:
   language: "Português"
   language_link: "./pt"
   language_flag: "/images/localizable/languages/pt.png"
+
   appStore_image: "/images/localizable/appStore/appStore-download-en.svg"
+
   contact: "Contact"
   contact_message: "Do you wanna talk to us? Got a question or sugestion?"
   contact_email_message: "Send an email to: "
+
   top_message: "Back to top"
   privacy: "Privacy"
   support: "Support"
+
   previous: "Previous"
   next: "Next"
+
+  menu1: "Articles"
+  menu2: "About us"
+  menu3: "Thanks"
+  menu4: "Contact"
+
+  section1_title: "Related articles"
+  section2_title: "ABOUT US"
+  section3_title: "Special thanks"
 
   team1_name: "Alline Kobayashi"
   team1_description: "Brazilian living in Budapest since November 2016, she is passionate about children, education and technology. Graduated in Computer Science, studied Neurolinguistics in her master's degree between the years of 2013 and 2016 at State University of Campinas (UNICAMP, Campinas-SP, Brazil). During her masters, she worked with children with difficulties in literacy and criticized the pathologization of childhood currently lived in Brazil. Through the union of her knowledge in computing and the experience during her masters, was created the app Língua de Gato."
@@ -23,9 +36,7 @@ en:
   pillar3_title: "Be together"
   pillar3_description: "We deeply believe that learning takes place with the participation of others. Thus, we wish to enrich the interaction between kids and their parents, teachers and friends."
 
-  section1_title: "About us"
-  section2_title: "Related articles"
-  section3_title: "Special thanks"
+  article_pt_message: "[Portuguese]"
 
   article1_title: "Língua de Gato: usando a linguagem de forma divertida"
   article1_link: "http://www.br-ie.org/pub/index.php/wcbie/article/view/6043"

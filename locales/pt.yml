@@ -3,15 +3,28 @@ pt:
   language: "English"
   language_link: ".."
   language_flag: "/images/localizable/languages/en.png"
+
   appStore_image: "/images/localizable/appStore/appStore-download-pt.svg"
+
   contact: "Contato"
   contact_message: "Quer conversar conosco? Tem alguma dúvida ou sugestão?"
   contact_email_message: "Envie um e-mail para: "
+
   top_message: "Voltar para o início"
   privacy: "Privacidade"
   support: "Suporte"
+
   previous: "Anterior"
   next: "Próximo"
+
+  menu1: "Artigos"
+  menu2: "Quem somos"
+  menu3: "Agradecimentos"
+  menu4: "Contato"
+
+  section1_title: "Artigos relacionados"
+  section2_title: "QUEM SOMOS"
+  section3_title: "Agradecimentos Especiais"
 
   team1_name: "Alline Kobayashi"
   team1_description: "Brasileira morando em Budapeste desde novembro de 2016, é apaixonada por crianças, educação e tecnologia. Graduou-se em Ciência da Computação e resolveu aventurar-se pela área de humanas ao cursar o mestrado em Neurolinguística entre os anos de 2013 e 2016, ambos na Universidade Estadual de Campinas (UNICAMP, Campinas-SP, Brasil). Duranto o mestrado, trabalhou com crianças e jovens com dificuldades escolares relativas à linguagem e atuou na contra mão do processo de patologização vivido atualmente no Brasil."
@@ -23,9 +36,7 @@ pt:
   pillar3_title: "Aproximar"
   pillar3_description: "Acreditamos profundamente que o aprendizado se dá com a participação do outro. Assim, desejamos enriquecer a interação entre as crianças e seus pais, professores e amigos, por meio do Língua de Gato."
 
-  section1_title: "Quem somos"
-  section2_title: "Artigos relacionados"
-  section3_title: "Agradecimentos Especiais"
+  article_pt_message: ""
 
   article1_title: "Língua de Gato: usando a linguagem de forma divertida"
   article1_link: "http://www.br-ie.org/pub/index.php/wcbie/article/view/6043"

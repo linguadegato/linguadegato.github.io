@@ -14,6 +14,7 @@ title: Língua de Gato app
 
       <!-- Navbar on not small screens: list -->
       <ul class="navbar colors-green-white left-align">
+
         <!-- 1st element: menu icon [small screen] -->
         <li class="hide-medium hide-large float-right opennav">
           <a class="colors-green-white hover-colors-white-black" href="javascript:void(0);" onclick="openMenu()">
@@ -26,12 +27,12 @@ title: Língua de Gato app
           </a>
         </li>
 
-        <!-- 2nd element: language flag -->
-        <!-- <li class=" float-right">
-          <a href="<%= t(:language_link) %>" class="hover-colors-white-black" style="padding-top: 2px;">
-            <img src="<%= t(:language_flag) %>" alt="">
+        <!-- 2nd element: language -->
+        <li class=" float-right opennav">
+          <a class="colors-green-white hover-colors-white-black" href="<%= t(:language_link) %>">
+            <%= t(:language) %>
           </a>
-        </li> -->
+        </li>
 
         <!-- 3rd element: home icon (Lingua de Gato logo) -->
         <li>
@@ -41,19 +42,19 @@ title: Língua de Gato app
         </li>
 
         <!-- Other element: menu options (will not appear on small screen) -->
-        <li class="hide-small"><a href="#articles" class="hover-colors-white-black">Articles</a></li>
-        <li class="hide-small"><a href="#team" class="hover-colors-white-black">Team</a></li>
-        <li class="hide-small"><a href="#thanks" class="hover-colors-white-black">Thanks</a></li>
-        <li class="hide-small"><a href="#contact" class="hover-colors-white-black">Contact</a></li>
+        <li class="hide-small"><a href="#articles" class="hover-colors-white-black"><%= t(:menu1) %></a></li>
+        <li class="hide-small"><a href="#team" class="hover-colors-white-black"><%= t(:menu2) %></a></li>
+        <li class="hide-small"><a href="#thanks" class="hover-colors-white-black"><%= t(:menu3) %></a></li>
+        <li class="hide-small"><a href="#contact" class="hover-colors-white-black"><%= t(:menu4) %></a></li>
      </ul>
 
       <!-- Navbar on small screens (change classes when it is suposed to appear or not)-->
       <div id="navbarSmall" class="hide hide-large hide-medium">
         <ul class="navbar left-align colors-green-white">
-          <li><a href="#team" class="hover-colors-white-black">Team</a></li>
-          <li><a href="#articles" class="hover-colors-white-black">Articles</a></li>
-          <li><a href="#thanks" class="hover-colors-white-black">Thanks</a></li>
-          <li><a href="#contact" class="hover-colors-white-black">Contact</a></li>
+          <li><a href="#team" class="hover-colors-white-black"><%= t(:menu1) %></a></li>
+          <li><a href="#articles" class="hover-colors-white-black"><%= t(:menu2) %></a></li>
+          <li><a href="#thanks" class="hover-colors-white-black"><%= t(:menu3) %></a></li>
+          <li><a href="#contact" class="hover-colors-white-black"><%= t(:menu4) %></a></li>
         </ul>
       </div>
 
@@ -66,7 +67,6 @@ title: Língua de Gato app
 
   <!-- *******  Pillars Container ******* -->
     <div class="padding-64 text-center container" id="pillars">
-      <h2>OUR PILLARS</h2>
 
       <div class="row"><br>
 
@@ -95,7 +95,7 @@ title: Língua de Gato app
     <div class="padding-64 colors-pink-white row-padding" id="articles">
 
       <div class="quarter">
-        <h2><%= t(:section2_title) %></h2>
+        <h2><%= t(:section1_title) %></h2>
       </div>
 
       <div class="quarter">
@@ -103,6 +103,7 @@ title: Língua de Gato app
           <!-- <img src="/images/logo/icon.png" alt="" style="width:50%"> -->
           <div class="container">
             <h3><%= t(:article2_title) %></h3>
+            <p style="color:#63B197"><%= t(:article_pt_message) %></p>
             <h4><%= t(:article2_event) %></h4>
             <p><%= t(:article2_autor) %></p>
           </div>
@@ -114,6 +115,7 @@ title: Língua de Gato app
           <!-- <img src="/images/logo/icon.png" alt="" style="width:50%"> -->
           <div class="container">
             <h3><%= t(:article1_title) %></h3>
+            <p style="color:#63B197"><%= t(:article_pt_message) %></p>
             <h4><%= t(:article1_event) %></h4>
             <p><%= t(:article1_autor) %></p>
           </div>
@@ -124,7 +126,7 @@ title: Língua de Gato app
 
   <!-- *******  Team Row ******* -->
     <div class="padding-64 text-center row-padding" id="team">
-        <h2><%= t(:section1_title) %></h2>
+        <h2><%= t(:section2_title) %></h2>
         <br>
         <div class="third margin-bottom">
           <img src="/images/team/alline.png" alt="Alline Kobayashi" style="width:45%" class="circle">
