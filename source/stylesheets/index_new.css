@@ -1,19 +1,53 @@
-html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+html,body{
+  font-family:Verdana,sans-serif;
+  font-size:15px;
+  line-height:1.5
+}
 html{
+  overflow-x:hidden
   -ms-text-size-adjust:100%;
   -webkit-text-size-adjust:100%
 }
 body{
   margin:0
 }
-article,figcaption,figure,footer,header,main,menu,nav,section,summary{
-  display:block
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+
+/*----------Properties: font----------*/
+.font-wide{
+  letter-spacing:4px
 }
-video{
-  display:inline-block
+.font-serif{
+  font-family:"Times New Roman",Times,serif
 }
-progress{
-  vertical-align:baseline
+h1,h2,h3,h4,h5,h6,.font-slim,.font-wide{
+  font-family:"Segoe UI",Arial,sans-serif
+}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
+  font-weight:inherit
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight:400;
+  margin:10px 0
+}
+h1{font-size:36px}
+h2{font-size:30px}
+h3{font-size:24px}
+h4{font-size:20px}
+h6{font-size:16px}
+
+/*----------Properties: other elements----------*/
+hr{
+  border:0;
+  border-top:1px solid #eee;
+  margin:20px 0
+}
+img{
+  margin-bottom:-5px
+}
+
+a{
+  color:inherit
 }
 a{
   background-color:transparent;
@@ -22,75 +56,30 @@ a{
 a:active,a:hover{
   outline-width:0
 }
+
+article,figcaption,figure,footer,header,main,menu,nav,section,summary{
+  display:block
+}
+
+video{
+  display:inline-block
+}
+
+progress{
+  vertical-align:baseline
+}
+
 abbr[title]{
   border-bottom:none;
   text-decoration:underline;
   text-decoration:underline dotted
 }
 
-/*----------Navbar: menu superior----------*/
-.navbar{
-  list-style-type:none;
-  margin:0;
-  padding:0;
-  overflow:hidden
-}
-.navbar li{
-  float:left
-}
-.navbar li a{
-  display:block;
-  padding:8px 16px
-}
-.navbar li a:hover{
-  color:#000;
-  background-color:#ccc
-}
-.navbar li a img{
-  width: 35px;
-}
-
-.navbar a{
-  text-decoration:none!important
-}
-
-.navbar:hover,.navbar:first-child:hover{
-  background-color:#ccc;
-  color:#000
-}
-
-.navbar .opennav .float-right{
-  float:right!important
-}
-
-/*----------Responsive modifications ----------*/
-@media screen and (max-width:600px){
-  .navbar li:not(.opennav){
-    float:none;
-    width:100%!important
-  }
-  .navbar li.float-right{
-    float:none!important
-  }
-}
-
-@media screen and (max-width:600px){
-  .navbar{
-    position:relative
-  }
-}
-
-@media screen and (max-width:600px){
-  .navbar{
-    text-align:center
-  }
-}
-
 /*----------Container----------*/
 .container{
   padding:0.01em 16px
 }
-.container:after,.row:after,.w3-btn-group:before,.w3-btn-group:after{
+.container:after,.row:after{
   content:"";
   display:table;
   clear:both
@@ -211,11 +200,70 @@ abbr[title]{
 .box{
   box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important
 }
+
+/*----------Navbar: menu superior----------*/
+.navbar{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden
+}
+.navbar li{
+  float:left
+}
+.navbar li a{
+  display:block;
+  padding:8px 16px
+}
+.navbar li a:hover{
+  color:#000;
+  background-color:#ccc
+}
+.navbar li a img{
+  width: 35px;
+}
+
+.navbar a{
+  text-decoration:none!important
+}
+
+.navbar:hover,.navbar:first-child:hover{
+  background-color:#ccc;
+  color:#000
+}
+
+.navbar .opennav .float-right{
+  float:right!important
+}
+
+/*----------Responsive modifications: navbar ----------*/
+@media screen and (max-width:600px){
+  .navbar li:not(.opennav){
+    float:none;
+    width:100%!important
+  }
+  .navbar li.float-right{
+    float:none!important
+  }
+}
+
+@media screen and (max-width:600px){
+  .navbar{
+    position:relative
+  }
+}
+
+@media screen and (max-width:600px){
+  .navbar{
+    text-align:center
+  }
+}
+
 /*----------Navbar on small screeen----------*/
 .navbar .opennav.float-right {
   float: right!important;
 }
-.btn,.w3-closenav,.opennav{
+.btn,.closenav,.opennav{
   -webkit-touch-callout:none;
   -webkit-user-select:none;
   -khtml-user-select:none;
@@ -224,16 +272,16 @@ abbr[title]{
   user-select:none
 }
 
-.opennav,.w3-closenav{
+.opennav,.closenav{
   color:inherit
 }
 
-.opennav:hover,.w3-closenav:hover{
+.opennav:hover,.closenav:hover{
   cursor:pointer;
   opacity:0.8
 }
 
-.opennav,.w3-closenav,.w3-closebtn,*[class*="hover-"]
+.opennav,.closenav,*[class*="hover-"]
 
 /*----------Menu bar icon (3 parallel lines) ----------*/
 .menu-icon {
@@ -256,7 +304,7 @@ abbr[title]{
   border-bottom:6px solid #EA5194!important
 }
 
-/*----------Buttons----------*/
+/*----------Buttons: properties----------*/
 .top-btn{
   bottom:100px;
   z-index:1;
@@ -270,34 +318,21 @@ abbr[title]{
   vertical-align:middle;
   overflow:hidden;
   text-decoration:none!important;
-  color:#fff;
-  background-color:#000;
   text-align:center;
   cursor:pointer;
   white-space:nowrap
 }
 
-.w3-disabled,.btn:disabled{
+/*----------Buttons: behavior----------*/
+.disabled,.btn:disabled{
   cursor:not-allowed;
   opacity:0.3
 }
-.btn.w3-disabled *,.btn:disabled *{
+.btn.disabled *,.btn:disabled *{
   pointer-events:none
 }
-.btn.w3-disabled:hover,.btn:disabled:hover{
+.btn.disabled:hover,.btn:disabled:hover{
   box-shadow:none
-}
-.w3-btn-group .btn{
-  float:left
-}
-.w3-btn-bar .btn{
-  box-shadow:none;
-  background-color:inherit;
-  color:inherit;
-  float:left
-}
-.w3-btn-bar .btn:hover{
-  background-color:#ccc
 }
 
 /*----------Circle images----------*/
@@ -305,7 +340,7 @@ abbr[title]{
   border-radius:50%!important
 }
 
-/*----------Hide and show elements (Responsive modifications)----------*/
+/*----------Responsive modifications: Hide and show elements----------*/
 .display-none{
   display:none
 }
@@ -340,38 +375,23 @@ abbr[title]{
   }
 }
 
-/*----------End----------*/
+/*----------Responsive modifications: dividing into columns----------*/
 .row-padding:after{
   content:"";
   display:table;
   clear:both
 }
-.row-padding,.row-padding>.third,.row-padding>.w3-twothird,.row-padding>.w3-threequarter,.row-padding>.quarter,.row-padding>.col{
+.row-padding,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.col{
   padding:0 8px
 }
 /*third*/
-.col,.third,.w3-twothird,.w3-threequarter,.quarter{
+.col,.third,.twothird,.threequarter,.quarter{
   float:left;
   width:100%
 }
 
-.col.s12,.third,.w3-twothird,.w3-threequarter,.quarter{
+.col.s12,.third,.twothird,.threequarter,.quarter{
   width:99.99999%
-}
-
-.w3-display-hover{
-  display:none
-}
-
-.w3-display-bottomleft{
-  position:absolute;
-  left:0;
-  bottom:0
-}
-.w3-display-bottomright{
-  position:absolute;
-  right:0;
-  bottom:0
 }
 
 @media only screen and (min-width:601px){
@@ -382,8 +402,8 @@ abbr[title]{
   .col.m5{width:41.66666%}
   .col.m6{width:49.99999%}
   .col.m7{width:58.33333%}
-  .col.m8,.w3-twothird{width:66.66666%}
-  .col.m9,.w3-threequarter{width:74.99999%}
+  .col.m8,.twothird{width:66.66666%}
+  .col.m9,.threequarter{width:74.99999%}
   .col.m10{width:83.33333%}
   .col.m11{width:91.66666%}
   .col.m12{width:99.99999%}
@@ -396,24 +416,12 @@ abbr[title]{
   .col.l5{width:41.66666%}
   .col.l6{width:49.99999%}
   .col.l7{width:58.33333%}
-  .col.l8,.w3-twothird{width:66.66666%}
-  .col.l9,.w3-threequarter{width:74.99999%}
+  .col.l8,.twothird{width:66.66666%}
+  .col.l9,.threequarter{width:74.99999%}
   .col.l10{width:83.33333%}
   .col.l11{width:91.66666%}
   .col.l12{width:99.99999%}
 }
-
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-
-
 /*--------------------*/
 /*dfn{font-style:italic}mark{background:#ff0;color:#000}*/
 small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
@@ -435,11 +443,3 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 ::-webkit-input-placeholder{color:inherit;opacity:0.54}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
-html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
-h1,h2,h3,h4,h5,h6,.w3-slim,.w3-wide{font-family:"Segoe UI",Arial,sans-serif}
-h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
-.w3-serif{font-family:"Times New Roman",Times,serif}
-h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
-h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
-hr{border:0;border-top:1px solid #eee;margin:20px 0}
-img{margin-bottom:-5px}a{color:inherit}
