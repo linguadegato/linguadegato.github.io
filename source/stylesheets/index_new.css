@@ -116,12 +116,28 @@ abbr[title]{
 }
 
 /*----------Sections colors------------*/
-.colors-lightgrey-black {
+.colors-blue{
+    color: #2EAFDB
+}
+.colors-orange{
+    color: #F7A93C
+}
+.colors-pink{
+    color: #EA5194
+}
+.colors-light-green{
+    color: #AAC821
+}
+.colors-green{
+    color: #63B197
+}
+
+.colors-lightgrey-black,.hover-colors-lightgrey-black:hover{
   color:#000 !important;
   background-color:#f0f0f0 !important
 }
 
-.colors-blue-white {
+.colors-blue-white,.hover-colors-blue-white:hover{
   color:#fff !important;
   background-color:#2EAFDB !important
 }
@@ -131,12 +147,12 @@ abbr[title]{
   background-color:#63B197 !important
 }
 
-.colors-orange-white{
+.colors-orange-white,.hover-colors-orange-white:hover{
   color:#fff !important;
   background-color:#F7A93C !important
 }
 
-.colors-pink-white{
+.colors-pink-white,.hover-colors-pink-white:hover{
   color:#fff !important;
   background-color:#EA5194 !important
 }
