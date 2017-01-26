@@ -1,6 +1,6 @@
 ---
 pt:
-  language: "English"
+  language: "ENGLISH"
   language_link: ".."
   language_flag: "/images/localizable/languages/en.png"
 
@@ -17,10 +17,10 @@ pt:
   previous: "Anterior"
   next: "Próximo"
 
-  menu1: "Artigos"
-  menu2: "Quem somos"
-  menu3: "Agradecimentos"
-  menu4: "Contato"
+  menu1: "ARTIGOS"
+  menu2: "QUEM SOMOS"
+  menu3: "AGRADECIMENTOS"
+  menu4: "CONTATO"
 
   section1_title: "Artigos relacionados"
   section2_title: "QUEM SOMOS"

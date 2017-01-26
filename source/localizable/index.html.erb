@@ -1,240 +1,272 @@
 ---
 title: Língua de Gato app
 ---
+<!DOCTYPE html>
+<html>
 
-<body>
-  <div class="navbar-wrapper">
-    <nav class="navbar navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div>
-            <a class="navbar-brand" href="#contato"><%= t(:contact) %></a>
-            <span class="navbar-brand">|</span>
-            <a class="navbar-brand" href="https://www.facebook.com/linguadegatoapp" target="_blank">Facebook</a>
-            <span class="navbar-brand">|</span>
-            <a class="navbar-brand" href="<%= t(:language_link) %>">
-              <!-- <img src="<%= t(:language_flag) %>"> -->
-              <%= t(:language) %>
-            </a>
-            <a href="https://itunes.apple.com/app/id1071864943?mt=8" class="" target="_blank">
-              <img class="appstore-download" src="<%= t(:appStore_image) %>">
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <div class="header">
-    <div class="header-content">
-      <img class="logo" src="/images/logo/icon.png" class="icon" />
-      <img class="title" src="/images/logo/lingua_de_gato_letras.png" />
-    </div>
-  </div>
+  <body>
 
+  <!-- ******* Navbar ******* -->
+    <div class="top">
 
-  <!-- Carousel
-  ================================================== -->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-      <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-      <li data-target="#myCarousel" data-slide-to="3" class=""></li>
-      <li data-target="#myCarousel" data-slide-to="4" class=""></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <div class="container">
-          <div class="carousel-caption">
-            <img class="ipad-screen" src="/images/ipad/1.png" />
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <img class="ipad-screen" src="/images/ipad/2.png" />
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <img class="ipad-screen" src="/images/ipad/3.png" />
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <img class="ipad-screen" src="/images/ipad/4.png" />
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <img class="ipad-screen" src="/images/ipad/5.png" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="left carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only"><%= t(:previous) %></span>
-    </a>
-    <a class="right carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only"><%= t(:next) %></span>
-    </a>
-  </div><!-- /.carousel -->
+      <!-- Navbar on not small screens: list -->
+      <ul class="navbar left-align colors-white" id="myNavbar">
 
+        <!-- 1st element: menu icon [small screen] -->
+        <li class="hide-medium hide-large float-right opennav">
+          <a class="hover-colors-white-black" href="javascript:void(0);" onclick="openMenu()">
+            <!-- Icon of the menu (3 horizontal bars) on the right side on small screens-->
+            <div class="menu-icon">
+              <div class="menu-bar1"></div>
+              <div class="menu-bar2"></div>
+              <div class="menu-bar3"></div>
+            </div>
+          </a>
+        </li>
 
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+        <!-- 2nd element: language -->
+        <li class=" float-right opennav">
+          <a class="hover-colors-white-black" href="<%= t(:language_link) %>">
+            <%= t(:language) %>
+          </a>
+        </li>
 
-  <div class="container marketing">
+        <!-- 3rd element: home icon (Lingua de Gato logo) -->
+        <li>
+          <a href="#" style="padding-top: 0px; padding-bottom: 0px;">
+            <img src="/images/logo/icon-small.png" alt="">
+          </a>
+        </li>
 
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <img class="img-circle" src="/images/pillars/fun.jpg" alt="Generic placeholder image" width="140" height="140">
-        <h2 class="divertir"><%= t(:pillar1_title) %></h2>
-        <p><%= t(:pillar1_description) %></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img class="img-circle" src="/images/pillars/teach.jpg" alt="Generic placeholder image" width="140" height="140">
-        <h2 class="desenvolver"><%= t(:pillar2_title) %></h2>
-        <p><%= t(:pillar2_description) %></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img class="img-circle" src="/images/pillars/together.jpg" alt="Generic placeholder image" width="140" height="140">
-        <h2 class="aproximar"><%= t(:pillar3_title) %></h2>
-        <p><%= t(:pillar3_description) %></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+        <!-- Other element: menu options (will not appear on small screen) -->
+        <li class="hide-small"><a href="#articles" class="hover-colors-white-black"><%= t(:menu1) %></a></li>
+        <li class="hide-small"><a href="#team" class="hover-colors-white-black"><%= t(:menu2) %></a></li>
+        <li class="hide-small"><a href="#thanks" class="hover-colors-white-black"><%= t(:menu3) %></a></li>
+        <li class="hide-small"><a href="#contact" class="hover-colors-white-black"><%= t(:menu4) %></a></li>
+     </ul>
 
-
-    <!-- START THE FEATURETTES -->
-
-    <!-- START VIDEO -->
-    <!--
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div>
-        <iframe class="video" src="https://www.youtube.com/embed/W2EA2EgqR5o" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-    -->
-    <!-- END VIDEO -->
-
-    <!-- /END THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <h2 class="featurette-heading sub-title"><%= t(:section1_title) %></h2>
-
-    <div class="row">
-
-      <div class="col-lg-4">
-        <img class="img-circle" src="/images/team/alline.png" alt="Generic placeholder image" width="140" height="140">
-        <h2 class="desenvolver"><%= t(:team1_name) %></h2>
-      </div>
-      <div class="col-lg-4">
-        <p><%= t(:team1_description) %></p>
-      </div>
-      <div class="col-lg-4">
-        <p>
-        </br></br></br></br>
-          <a class="btn btn-default" href="https://br.linkedin.com/in/alline-kobayashi-b9083345" role="button" target="_blank">LinkedIn</a>
-          <a class="btn btn-default" href="http://lattes.cnpq.br/8071107008406828" role="button" target="_blank">Lattes</a>
-        </p>
+      <!-- Navbar on small screens (change classes when it is suposed to appear or not)-->
+      <div id="navbarSmall" class="hide hide-large hide-medium">
+        <ul class="navbar left-align colors-green-white">
+          <li><a href="#team" class="hover-colors-white-black"><%= t(:menu1) %></a></li>
+          <li><a href="#articles" class="hover-colors-white-black"><%= t(:menu2) %></a></li>
+          <li><a href="#thanks" class="hover-colors-white-black"><%= t(:menu3) %></a></li>
+          <li><a href="#contact" class="hover-colors-white-black"><%= t(:menu4) %></a></li>
+        </ul>
       </div>
 
     </div>
 
-    <hr class="featurette-divider">
+  <!-- *******  Header ******* -->
+    <div id="header">
 
-    <h2 class="featurette-heading sub-title"><%= t(:section2_title) %></h2>
+      <!-- Background image -->
+      <img src="/images/background/placeit-1280height.png" alt="" style="width:100%;opacity: 0.7;min-height: 350px;max-height: 600px;">
 
-    <div class="row featurette">
-        <div id="artigos" class="col-md-10">
-            <a class="lead" href="<%= t(:article2_link) %>" target="_blank"><%= t(:article2_title) %></a>
+      <!-- Banner with logo and icon (big screen) -->
+      <div class="display-right padding-medium hide-small" style="width:35%">
+        <div class="padding-large round-large colors-pink-white">
+          <img class="centralize" src="/images/logo/icon-medium.png" style="height: 100px;">
+          <img src="/images/logo/lingua-de-gato-white-small.png" alt="" style="width:100%">
+          <br><br>
+          <a href="https://itunes.apple.com/app/id1071864943?mt=8" target="_blank">
+            <img class="centralize" src="/images/localizable/appStore/appStore-download-en.svg" style="width:160px;">
+          </a>
+        </div>
+      </div>
+
+      <!-- Banner with logo and icon (small screen) -->
+      <div class="padding-medium hide-medium hide-large" style="width:100%">
+        <div class="padding-large round-large colors-pink-white">
+          <img src="/images/logo/lingua-de-gato-white-small.png" alt="" style="width:100%">
+        </div>
+      </div>
+
+    </div>
+
+  <!-- *******  Pillars Container ******* -->
+    <div class="padding-64 text-center container" id="pillars">
+
+      <div class="row"><br>
+
+        <div class="third">
+          <img src="/images/pillars/fun.jpg" alt="Fun" style="width:45%" class="circle">
+          <h3><%= t(:pillar1_title) %></h3>
+          <p><%= t(:pillar1_description) %></p>
+        </div>
+
+        <div class="third">
+          <img src="/images/pillars/teach.jpg" alt="Teach" style="width:45%" class="circle">
+          <h3><%= t(:pillar2_title) %></h3>
+          <p><%= t(:pillar2_description) %></p>
+        </div>
+
+        <div class="third">
+          <img src="/images/pillars/together.jpg" alt="Together" style="width:45%" class="circle">
+          <h3><%= t(:pillar3_title) %></h3>
+          <p><%= t(:pillar3_description) %></p>
+        </div>
+
+      </div>
+    </div>
+
+  <!-- *******  Articles Row ******* -->
+    <div class="padding-64 colors-blue-white row-padding" id="articles">
+
+      <div class="quarter">
+        <h2><%= t(:section1_title) %></h2>
+      </div>
+
+      <div class="quarter">
+        <div class="box colors-white-black">
+          <div class="container">
+            <h3><%= t(:article2_title) %></h3>
+            <p class="colors-green"><%= t(:article_pt_message) %></p>
+            <h4><%= t(:article2_event) %></h4>
+            <p><%= t(:article2_autor) %></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="quarter">
+        <div class="box colors-white-black">
+          <div class="container">
+            <h3><%= t(:article1_title) %></h3>
+            <p class="colors-green"><%= t(:article_pt_message) %></p>
+            <h4><%= t(:article1_event) %></h4>
+            <p><%= t(:article1_autor) %></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  <!-- *******  Team Row ******* -->
+    <div class="padding-64 text-center row-padding" id="team">
+        <h2><%= t(:section2_title) %></h2>
+        <br>
+
+        <div class="third margin-bottom">
+          <img src="/images/team/alline.png" alt="Alline Kobayashi" style="width:45%" class="circle">
+          <h3><%= t(:team1_name) %></h3>
+          <a class="btn colors-pink-white hover-colors-blue-white" href="https://br.linkedin.com/in/alline-kobayashi-b9083345" role="button" target="_blank">LinkedIn</a>
+          <a class="btn colors-pink-white hover-colors-blue-white" href="http://lattes.cnpq.br/8071107008406828" role="button" target="_blank">Lattes</a>
+        </div>
+
+        <div class="third margin-bottom">
+          <p><%= t(:team1_description) %></p>
+        </div>
+    </div>
+
+  <!-- *******  Thanks Row ******* -->
+    <div class="padding-64 colors-orange-white row-padding" id="thanks">
+
+      <div class="quarter">
+        <h2><%= t(:section3_title) %></h2>
+      </div>
+
+      <div class="quarter">
+        <div class="box colors-white-black">
+          <div class="container">
+            <h3><%= t(:thanks1_name) %></h3>
+            <p><%= t(:thanks1_description) %></p>
             <p>
-              <%= t(:article2_autor) %><br/>
-              <%= t(:article2_event) %><br/>
+              <a class="btn colors-green-white hover-colors-orange-white" href="<%= t(:thanks1_linkedin) %>" role="button" target="_blank">LinkedIn</a>
+              <a class="btn colors-green-white hover-colors-orange-white" href="<%= t(:thanks1_portfolio_link) %>" role="button" target="_blank"><%= t(:thanks1_portfolio) %></a>
             </p>
-            <p>
-              <%= t(:article2_description) %><br/>
-            </p>
-
-            <a class="lead" href="<%= t(:article1_link) %>" target="_blank"><%= t(:article1_title) %></a>
-            <p>
-              <%= t(:article1_autor) %><br/>
-              <%= t(:article1_event) %><br/>
-            </p>
-            <p>
-              <%= t(:article1_description) %><br/>
-            </p>
+          </div>
         </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <h2 class="featurette-heading sub-title"><%= t(:section3_title) %></h2>
-
-    <div class="row">
-      <div class="col-lg-4">
-        <h2 class="divertir"><%= t(:thanks1_name) %></h2>
-          <p><%= t(:thanks1_description) %></p>
-          <p>
-            <a class="btn btn-default" href="<%= t(:thanks1_linkedin) %>" role="button" target="_blank">LinkedIn</a>
-            <a class="btn btn-default" href="<%= t(:thanks1_portfolio_link) %>" role="button" target="_blank"><%= t(:thanks1_portfolio) %></a>
-          </p>
       </div>
 
-      <div class="col-lg-4">
-        <h2 class="desenvolver"><%= t(:thanks2_name) %></h2>
-          <p><%= t(:thanks2_description) %></p>
+      <div class="quarter">
+        <div class="box colors-white-black">
+          <div class="container">
+            <h3><%= t(:thanks2_name) %></h3>
+            <p><%= t(:thanks2_description) %></p>
+          </div>
+        </div>
       </div>
 
-      <div class="col-lg-4">
-        <h2 class="aproximar"><%= t(:thanks3_name) %></h2>
-          <p><%= t(:thanks3_description) %></p>
-          <p>
-            <a class="btn btn-default" href="<%= t(:thanks3_linkedin) %>" role="button" target="_blank">LinkedIn</a>
-          </p>
+      <div class="quarter">
+        <div class="box colors-white-black">
+          <div class="container">
+            <h3><%= t(:thanks3_name) %></h3>
+            <p><%= t(:thanks3_description) %></p>
+            <p>
+              <a class="btn colors-green-white hover-colors-orange-white" href="<%= t(:thanks3_linkedin) %>" role="button" target="_blank">LinkedIn</a>
+            </p>
+          </div>
+        </div>
       </div>
 
     </div>
 
-    <hr class="featurette-divider">
-
-    <h2 class="featurette-heading sub-title"><%= t(:contact) %></h2>
-
-    <div class="row featurette">
-      <div id="contato" class="col-md-10">
-        <p class="lead"><%= t(:contact_message) %></p>
-        <p class="lead"><%= t(:contact_email_message) %> <span class="email-contato">contato@linguadegatoapp.com.br</span></p>
+  <!-- *******  Contact Container ******* -->
+    <div class="padding-64 colors-lightgrey-black container" id="contact">
+      <div class="row">
+        <!-- <div class="col m5"> -->
+          <div class="padding-16">
+            <span class="font-size-xlarge underline-pink">
+              <%= t(:contact) %>
+            </span>
+          </div>
+          <p><%= t(:contact_message) %></p>
+          <img src="/images/mail/mail-pink.png" alt="">
+          contato@linguadegatoapp.com.br
+        <!-- </div> -->
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-      <p class="pull-right"><a href="#top"><%= t(:top_message) %></a></p>
-      <p>
-        <a href="/privacidade.html" class="footer-item" target="_blank"><%= t(:privacy) %></a>|
-        <a href="/suporte.html" class="footer-item" target="_blank"><%= t(:support) %></a>
-      </p>
+  <!-- *******  Footer ******* -->
+    <footer class="padding-32 colors-green-white text-center container">
+
+      <!-- AppStore link -->
+      <a href="https://itunes.apple.com/app/id1071864943?mt=8" target="_blank" style="display: inline-block;">
+        <img src="/images/localizable/appStore/appStore-download-en.svg" style="width: 160px">
+      </a>
+
+      <!-- Facebook link -->
+      <a href="https://www.facebook.com/linguadegatoapp" target="_blank" style="display: inline-block;">
+        <img src="/images/facebook.png" style="height: 47px; border-radius: 10px;">
+      </a>
+
+      <!-- Btn to top -->
+      <div class="top-btn float-right">
+        <span class="display-none padding-medium colors-green-white hide-small"><%= t(:top_message) %></span>
+        <a class="btn colors-green-white" href="#">
+          <span class="font-size-xlarge">
+              <img src="/images/arrow-up/up-white.png">
+          </span>
+        </a>
+      </div>
     </footer>
 
-  </div><!-- /.container -->
+  <!-- *******  Scripts ******* -->
+    <script>
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openMenu() {
+          var x = document.getElementById("navbarSmall");
+          if (x.className.indexOf("show-block") == -1) {
+              x.className += " show-block";
+          } else {
+              x.className = x.className.replace(" show-block", "");
+          }
+      }
+
+      // Change style of navbar on scroll
+      window.onscroll = function() {myFunction()};
+      function myFunction() {
+          var navbar = document.getElementById("myNavbar");
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+              navbar.className = "navbar left-align animate-top colors-green-white shadow";
+          } else {
+              navbar.className = "navbar left-align colors-white";
+          }
+      }
+    </script>
+
+  </body>
+</html>

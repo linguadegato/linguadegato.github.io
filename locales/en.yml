@@ -1,6 +1,6 @@
 ---
 en:
-  language: "Português"
+  language: "PORTUGUÊS"
   language_link: "./pt"
   language_flag: "/images/localizable/languages/pt.png"
 
@@ -17,10 +17,10 @@ en:
   previous: "Previous"
   next: "Next"
 
-  menu1: "Articles"
-  menu2: "About us"
-  menu3: "Thanks"
-  menu4: "Contact"
+  menu1: "ARTICLES"
+  menu2: "ABOUT US"
+  menu3: "THANKS"
+  menu4: "CONTACT"
 
   section1_title: "Related articles"
   section2_title: "ABOUT US"
