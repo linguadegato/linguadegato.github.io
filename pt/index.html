@@ -35,7 +35,7 @@
 
         <!-- 1st element: menu icon [small screen] -->
         <li class="hide-medium hide-large float-right opennav">
-          <a class="hover-colors-white-black" href="javascript:void(0);" onclick="openMenu()">
+          <a href="javascript:void(0);" onclick="openMenu()">
             <!-- Icon of the menu (3 horizontal bars) on the right side on small screens-->
             <div class="menu-icon">
               <div class="menu-bar1"></div>
@@ -53,8 +53,8 @@
         </li>
 
         <!-- 3rd element: home icon (Lingua de Gato logo) -->
-        <li>
-          <a href="#" style="padding-top: 0px; padding-bottom: 0px;">
+        <li onclick="closeMenu()">
+          <a href="#" style="padding-top: 0px; padding-bottom: 0px; display: inline-block">
             <img src="/images/logo/icon-small.png" alt="">
           </a>
         </li>
@@ -64,13 +64,14 @@
         <li class="hide-small"><a href="#team" class="hover-colors-white-black">QUEM SOMOS</a></li>
         <li class="hide-small"><a href="#thanks" class="hover-colors-white-black">AGRADECIMENTOS</a></li>
         <li class="hide-small"><a href="#contact" class="hover-colors-white-black">CONTATO</a></li>
+
      </ul>
 
       <!-- Navbar on small screens (change classes when it is suposed to appear or not)-->
-      <div id="navbarSmall" class="hide hide-large hide-medium">
+      <div id="navbarSmall" class="hide hide-large hide-medium" onclick="closeMenu()">
         <ul class="navbar left-align colors-green-white">
-          <li><a href="#team" class="hover-colors-white-black">ARTIGOS</a></li>
-          <li><a href="#articles" class="hover-colors-white-black">QUEM SOMOS</a></li>
+          <li><a href="#articles" class="hover-colors-white-black">ARTIGOS</a></li>
+          <li><a href="#team" class="hover-colors-white-black">QUEM SOMOS</a></li>
           <li><a href="#thanks" class="hover-colors-white-black">AGRADECIMENTOS</a></li>
           <li><a href="#contact" class="hover-colors-white-black">CONTATO</a></li>
         </ul>
@@ -79,7 +80,7 @@
     </div>
 
   <!-- *******  Header ******* -->
-    <div id="header">
+    <div id="header" onclick="closeMenu()">
 
       <!-- Background image -->
       <img src="/images/background/placeit-1280height.png" alt="" style="width:100%;opacity: 0.7;min-height: 350px;max-height: 600px;">
@@ -106,7 +107,7 @@
     </div>
 
   <!-- *******  Pillars Container ******* -->
-    <div class="padding-64 text-center container" id="pillars">
+    <div class="padding-64 text-center container" id="pillars" onclick="closeMenu()">
 
       <div class="row"><br>
 
@@ -132,7 +133,7 @@
     </div>
 
   <!-- *******  Articles Row ******* -->
-    <div class="padding-64 colors-blue-white row-padding" id="articles">
+    <div class="padding-64 colors-blue-white row-padding" id="articles" onclick="closeMenu()">
 
       <div class="quarter">
         <h2>Artigos relacionados</h2>
@@ -163,7 +164,7 @@
     </div>
 
   <!-- *******  Team Row ******* -->
-    <div class="padding-64 text-center row-padding" id="team">
+    <div class="padding-64 text-center row-padding" id="team" onclick="closeMenu()">
         <h2>QUEM SOMOS</h2>
         <br>
 
@@ -180,7 +181,7 @@
     </div>
 
   <!-- *******  Thanks Row ******* -->
-    <div class="padding-64 colors-orange-white row-padding" id="thanks">
+    <div class="padding-64 colors-orange-white row-padding" id="thanks" onclick="closeMenu()">
 
       <div class="quarter">
         <h2>Agradecimentos Especiais</h2>
@@ -223,7 +224,7 @@
     </div>
 
   <!-- *******  Contact Container ******* -->
-    <div class="padding-64 colors-lightgrey-black container" id="contact">
+    <div class="padding-64 colors-lightgrey-black container" id="contact" onclick="closeMenu()">
       <div class="row">
         <!-- <div class="col m5"> -->
           <div class="padding-16">
@@ -239,7 +240,7 @@
     </div>
 
   <!-- *******  Footer ******* -->
-    <footer class="padding-32 colors-green-white text-center container">
+    <footer class="padding-32 colors-green-white text-center container" onclick="closeMenu()">
 
       <!-- AppStore link -->
       <a href="https://itunes.apple.com/app/id1071864943?mt=8" target="_blank" style="display: inline-block;">
@@ -273,6 +274,15 @@
               x.className = x.className.replace(" show-block", "");
           }
       }
+
+      // Modal Image Gallery
+      function closeMenu(){
+        var smallMenu = document.getElementById("navbarSmall");
+        if (smallMenu.style.display != "none"){
+          smallMenu.className = smallMenu.className.replace(" show-block", "");
+        }
+      }
+
 
       // Change style of navbar on scroll
       window.onscroll = function() {myFunction()};
