@@ -17,7 +17,7 @@ title: Língua de Gato app
 
         <!-- 1st element: menu icon [small screen] -->
         <li class="hide-medium hide-large float-right opennav">
-          <a class="hover-colors-white-black" href="javascript:void(0);" onclick="openMenu()">
+          <a href="javascript:void(0);" onclick="openMenu()">
             <!-- Icon of the menu (3 horizontal bars) on the right side on small screens-->
             <div class="menu-icon">
               <div class="menu-bar1"></div>
@@ -35,8 +35,8 @@ title: Língua de Gato app
         </li>
 
         <!-- 3rd element: home icon (Lingua de Gato logo) -->
-        <li>
-          <a href="#" style="padding-top: 0px; padding-bottom: 0px;">
+        <li onclick="closeMenu()">
+          <a href="#" style="padding-top: 0px; padding-bottom: 0px; display: inline-block">
             <img src="/images/logo/icon-small.png" alt="">
           </a>
         </li>
@@ -46,13 +46,14 @@ title: Língua de Gato app
         <li class="hide-small"><a href="#team" class="hover-colors-white-black"><%= t(:menu2) %></a></li>
         <li class="hide-small"><a href="#thanks" class="hover-colors-white-black"><%= t(:menu3) %></a></li>
         <li class="hide-small"><a href="#contact" class="hover-colors-white-black"><%= t(:menu4) %></a></li>
+
      </ul>
 
       <!-- Navbar on small screens (change classes when it is suposed to appear or not)-->
-      <div id="navbarSmall" class="hide hide-large hide-medium">
+      <div id="navbarSmall" class="hide hide-large hide-medium" onclick="closeMenu()">
         <ul class="navbar left-align colors-green-white">
-          <li><a href="#team" class="hover-colors-white-black"><%= t(:menu1) %></a></li>
-          <li><a href="#articles" class="hover-colors-white-black"><%= t(:menu2) %></a></li>
+          <li><a href="#articles" class="hover-colors-white-black"><%= t(:menu1) %></a></li>
+          <li><a href="#team" class="hover-colors-white-black"><%= t(:menu2) %></a></li>
           <li><a href="#thanks" class="hover-colors-white-black"><%= t(:menu3) %></a></li>
           <li><a href="#contact" class="hover-colors-white-black"><%= t(:menu4) %></a></li>
         </ul>
@@ -61,7 +62,7 @@ title: Língua de Gato app
     </div>
 
   <!-- *******  Header ******* -->
-    <div id="header">
+    <div id="header" onclick="closeMenu()">
 
       <!-- Background image -->
       <img src="/images/background/placeit-1280height.png" alt="" style="width:100%;opacity: 0.7;min-height: 350px;max-height: 600px;">
@@ -88,7 +89,7 @@ title: Língua de Gato app
     </div>
 
   <!-- *******  Pillars Container ******* -->
-    <div class="padding-64 text-center container" id="pillars">
+    <div class="padding-64 text-center container" id="pillars" onclick="closeMenu()">
 
       <div class="row"><br>
 
@@ -114,7 +115,7 @@ title: Língua de Gato app
     </div>
 
   <!-- *******  Articles Row ******* -->
-    <div class="padding-64 colors-blue-white row-padding" id="articles">
+    <div class="padding-64 colors-blue-white row-padding" id="articles" onclick="closeMenu()">
 
       <div class="quarter">
         <h2><%= t(:section1_title) %></h2>
@@ -145,7 +146,7 @@ title: Língua de Gato app
     </div>
 
   <!-- *******  Team Row ******* -->
-    <div class="padding-64 text-center row-padding" id="team">
+    <div class="padding-64 text-center row-padding" id="team" onclick="closeMenu()">
         <h2><%= t(:section2_title) %></h2>
         <br>
 
@@ -162,7 +163,7 @@ title: Língua de Gato app
     </div>
 
   <!-- *******  Thanks Row ******* -->
-    <div class="padding-64 colors-orange-white row-padding" id="thanks">
+    <div class="padding-64 colors-orange-white row-padding" id="thanks" onclick="closeMenu()">
 
       <div class="quarter">
         <h2><%= t(:section3_title) %></h2>
@@ -205,7 +206,7 @@ title: Língua de Gato app
     </div>
 
   <!-- *******  Contact Container ******* -->
-    <div class="padding-64 colors-lightgrey-black container" id="contact">
+    <div class="padding-64 colors-lightgrey-black container" id="contact" onclick="closeMenu()">
       <div class="row">
         <!-- <div class="col m5"> -->
           <div class="padding-16">
@@ -221,7 +222,7 @@ title: Língua de Gato app
     </div>
 
   <!-- *******  Footer ******* -->
-    <footer class="padding-32 colors-green-white text-center container">
+    <footer class="padding-32 colors-green-white text-center container" onclick="closeMenu()">
 
       <!-- AppStore link -->
       <a href="https://itunes.apple.com/app/id1071864943?mt=8" target="_blank" style="display: inline-block;">
@@ -255,6 +256,15 @@ title: Língua de Gato app
               x.className = x.className.replace(" show-block", "");
           }
       }
+
+      // Modal Image Gallery
+      function closeMenu(){
+        var smallMenu = document.getElementById("navbarSmall");
+        if (smallMenu.style.display != "none"){
+          smallMenu.className = smallMenu.className.replace(" show-block", "");
+        }
+      }
+
 
       // Change style of navbar on scroll
       window.onscroll = function() {myFunction()};
