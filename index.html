@@ -10,8 +10,8 @@
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 
-    <link href="/stylesheets/bootstrap.css" rel="stylesheet" />
-    <link href="/stylesheets/carousel.css" rel="stylesheet" />
+    <!-- <link href="/stylesheets/bootstrap.css" rel="stylesheet" />
+    <link href="/stylesheets/carousel.css" rel="stylesheet" /> -->
 
     <!-- Custom Lingua de Gato -->
     <link href="/stylesheets/index.css" rel="stylesheet" />
@@ -19,242 +19,275 @@
   </head>
 
   <body>
-    <body>
-  <div class="navbar-wrapper">
-    <nav class="navbar navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div>
-            <a class="navbar-brand" href="#contato">Contact</a>
-            <span class="navbar-brand">|</span>
-            <a class="navbar-brand" href="https://www.facebook.com/linguadegatoapp" target="_blank">Facebook</a>
-            <span class="navbar-brand">|</span>
-            <a class="navbar-brand" href="./pt">
-              <!-- <img src="/images/languages/pt.png"> -->
-              Português
-            </a>
-            <a href="https://itunes.apple.com/app/id1071864943?mt=8" class="" target="_blank">
-              <img class="appstore-download" src="/images/applestore-download.svg">
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
+    <!DOCTYPE html>
+<html>
 
-  <div class="header">
-    <div class="header-content">
-      <img class="logo" src="/images/icon.png" class="icon" />
-      <img class="title" src="/images/lingua_de_gato_letras.png" />
-    </div>
-  </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <body>
 
-  <!-- Carousel
-  ================================================== -->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-      <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-      <li data-target="#myCarousel" data-slide-to="3" class=""></li>
-      <li data-target="#myCarousel" data-slide-to="4" class=""></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <div class="container">
-          <div class="carousel-caption">
-            <img class="ipad-screen" src="/images/ipad/1.png" />
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <img class="ipad-screen" src="/images/ipad/2.png" />
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <img class="ipad-screen" src="/images/ipad/3.png" />
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <img class="ipad-screen" src="/images/ipad/4.png" />
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="container">
-          <div class="carousel-caption">
-            <img class="ipad-screen" src="/images/ipad/5.png" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="left carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div><!-- /.carousel -->
+  <!-- ******* Navbar ******* -->
+    <div class="top">
 
+      <!-- Navbar on not small screens: list -->
+      <ul class="navbar left-align colors-white" id="myNavbar">
 
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+        <!-- 1st element: menu icon [small screen] -->
+        <li class="hide-medium hide-large float-right opennav">
+          <a class="hover-colors-white-black" href="javascript:void(0);" onclick="openMenu()">
+            <!-- Icon of the menu (3 horizontal bars) on the right side on small screens-->
+            <div class="menu-icon">
+              <div class="menu-bar1"></div>
+              <div class="menu-bar2"></div>
+              <div class="menu-bar3"></div>
+            </div>
+          </a>
+        </li>
 
-  <div class="container marketing">
+        <!-- 2nd element: language -->
+        <li class=" float-right opennav">
+          <a class="hover-colors-white-black" href="./pt">
+            PORTUGUÊS
+          </a>
+        </li>
 
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <img class="img-circle" src="/images/divertir.jpg" alt="Generic placeholder image" width="140" height="140">
-        <h2 class="divertir">Have fun</h2>
-        <p>Create crosswords for kids to have fun in the world of reading and writing from elements around them.</p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img class="img-circle" src="/images/desenvolver.jpg" alt="Generic placeholder image" width="140" height="140">
-        <h2 class="desenvolver">Teach</h2>
-        <p>Considering the complexity of acquiring reading and writing and the particularities of each child, we created a customizable environment in which you can take picures or record audios to create games.</p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img class="img-circle" src="/images/aproximar.jpg" alt="Generic placeholder image" width="140" height="140">
-        <h2 class="aproximar">Be together</h2>
-        <p>We deeply believe that learning takes place with the participation of others. Thus, we wish to enrich the interaction between kids and their parents, teachers and friends.</p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+        <!-- 3rd element: home icon (Lingua de Gato logo) -->
+        <li>
+          <a href="#" style="padding-top: 0px; padding-bottom: 0px;">
+            <img src="/images/logo/icon-small.png" alt="">
+          </a>
+        </li>
 
+        <!-- Other element: menu options (will not appear on small screen) -->
+        <li class="hide-small"><a href="#articles" class="hover-colors-white-black">ARTICLES</a></li>
+        <li class="hide-small"><a href="#team" class="hover-colors-white-black">ABOUT US</a></li>
+        <li class="hide-small"><a href="#thanks" class="hover-colors-white-black">THANKS</a></li>
+        <li class="hide-small"><a href="#contact" class="hover-colors-white-black">CONTACT</a></li>
+     </ul>
 
-    <!-- START THE FEATURETTES -->
-
-    <!-- START VIDEO -->
-    <!--
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div>
-        <iframe class="video" src="https://www.youtube.com/embed/W2EA2EgqR5o" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-    -->
-    <!-- END VIDEO -->
-
-    <!-- /END THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <h2 class="featurette-heading sub-title">About us</h2>
-
-    <div class="row">
-
-      <div class="col-lg-4">
-        <img class="img-circle" src="/images/team/alline.png" alt="Generic placeholder image" width="140" height="140">
-        <h2 class="desenvolver">Alline Kobayashi</h2>
-      </div>
-      <div class="col-lg-4">
-        <p>Brazilian living in Budapest since November 2016, she is passionate about children, education and technology. Graduated in Computer Science, studied Neurolinguistics in her master's degree between the years of 2013 and 2016 at State University of Campinas (UNICAMP, Campinas-SP, Brazil). During her masters, she worked with children with difficulties in literacy and criticized the pathologization of childhood currently lived in Brazil. Through the union of her knowledge in computing and the experience during her masters, was created the app Língua de Gato.</p>
-      </div>
-      <div class="col-lg-4">
-        <p>
-        </br></br></br></br>
-          <a class="btn btn-default" href="https://br.linkedin.com/in/alline-kobayashi-b9083345" role="button" target="_blank">LinkedIn</a>
-          <a class="btn btn-default" href="http://lattes.cnpq.br/8071107008406828" role="button" target="_blank">Lattes</a>
-        </p>
+      <!-- Navbar on small screens (change classes when it is suposed to appear or not)-->
+      <div id="navbarSmall" class="hide hide-large hide-medium">
+        <ul class="navbar left-align colors-green-white">
+          <li><a href="#team" class="hover-colors-white-black">ARTICLES</a></li>
+          <li><a href="#articles" class="hover-colors-white-black">ABOUT US</a></li>
+          <li><a href="#thanks" class="hover-colors-white-black">THANKS</a></li>
+          <li><a href="#contact" class="hover-colors-white-black">CONTACT</a></li>
+        </ul>
       </div>
 
     </div>
 
-    <hr class="featurette-divider">
+  <!-- *******  Header ******* -->
+    <div id="header">
 
-    <h2 class="featurette-heading sub-title">Related articles</h2>
+      <!-- Background image -->
+      <img src="/images/background/placeit-1280height.png" alt="" style="width:100%;opacity: 0.7;min-height: 350px;max-height: 600px;">
 
-    <div class="row featurette">
-        <div id="artigos" class="col-md-10">
-            <a class="lead" href="http://ebooks.pucrs.br/edipucrs/anais/csbc/assets/2016/desafie!/13.pdf" target="_blank">Fala, Leitura e Escrita em Aplicativos Móveis: Desafios de uma Abordagem Discursiva</a>
+      <!-- Banner with logo and icon (big screen) -->
+      <div class="display-right padding-medium hide-small" style="width:35%">
+        <div class="padding-large round-large colors-pink-white">
+          <img class="centralize" src="/images/logo/icon-medium.png" style="height: 100px;">
+          <img src="/images/logo/lingua-de-gato-white-small.png" alt="" style="width:100%">
+          <br><br>
+          <a href="https://itunes.apple.com/app/id1071864943?mt=8" target="_blank">
+            <img class="centralize" src="/images/localizable/appStore/appStore-download-en.svg" style="width:160px;">
+          </a>
+        </div>
+      </div>
+
+      <!-- Banner with logo and icon (small screen) -->
+      <div class="padding-medium hide-medium hide-large" style="width:100%">
+        <div class="padding-large round-large colors-pink-white">
+          <img src="/images/logo/lingua-de-gato-white-small.png" alt="" style="width:100%">
+        </div>
+      </div>
+
+    </div>
+
+  <!-- *******  Pillars Container ******* -->
+    <div class="padding-64 text-center container" id="pillars">
+
+      <div class="row"><br>
+
+        <div class="third">
+          <img src="/images/pillars/fun.jpg" alt="Fun" style="width:45%" class="circle">
+          <h3>Have fun</h3>
+          <p>Create crosswords for kids to have fun in the world of reading and writing from elements around them.</p>
+        </div>
+
+        <div class="third">
+          <img src="/images/pillars/teach.jpg" alt="Teach" style="width:45%" class="circle">
+          <h3>Teach</h3>
+          <p>Considering the complexity of acquiring reading and writing and the particularities of each child, we created a customizable environment in which you can take picures or record audios to create games.</p>
+        </div>
+
+        <div class="third">
+          <img src="/images/pillars/together.jpg" alt="Together" style="width:45%" class="circle">
+          <h3>Be together</h3>
+          <p>We deeply believe that learning takes place with the participation of others. Thus, we wish to enrich the interaction between kids and their parents, teachers and friends.</p>
+        </div>
+
+      </div>
+    </div>
+
+  <!-- *******  Articles Row ******* -->
+    <div class="padding-64 colors-blue-white row-padding" id="articles">
+
+      <div class="quarter">
+        <h2>Related articles</h2>
+      </div>
+
+      <div class="quarter">
+        <div class="box colors-white-black">
+          <div class="container">
+            <h3>Fala, Leitura e Escrita em Aplicativos Móveis: Desafios de uma Abordagem Discursiva</h3>
+            <p class="colors-green">[Portuguese]</p>
+            <h4>CSBC 2016: DesafIE - 5º Workshop de Desafios da Computação aplicada à Educação</h4>
+            <p>Alline Kobayashi, Fernanda Freire</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="quarter">
+        <div class="box colors-white-black">
+          <div class="container">
+            <h3>Língua de Gato: usando a linguagem de forma divertida</h3>
+            <p class="colors-green">[Portuguese]</p>
+            <h4>CBIE 2015: V Congresso Brasileiro de Informática na Educação e X Conferência Latino-Americana de Objetos e Tecnologias de Aprendizagem</h4>
+            <p>Alline Kobayashi, Fernanda Freire, Vítor Rocha, André Scherma</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  <!-- *******  Team Row ******* -->
+    <div class="padding-64 text-center row-padding" id="team">
+        <h2>ABOUT US</h2>
+        <br>
+
+        <div class="third margin-bottom">
+          <img src="/images/team/alline.png" alt="Alline Kobayashi" style="width:45%" class="circle">
+          <h3>Alline Kobayashi</h3>
+          <a class="btn colors-pink-white hover-colors-blue-white" href="https://br.linkedin.com/in/alline-kobayashi-b9083345" role="button" target="_blank">LinkedIn</a>
+          <a class="btn colors-pink-white hover-colors-blue-white" href="http://lattes.cnpq.br/8071107008406828" role="button" target="_blank">Lattes</a>
+        </div>
+
+        <div class="third margin-bottom">
+          <p>Brazilian living in Budapest since November 2016, she is passionate about children, education and technology. Graduated in Computer Science, studied Neurolinguistics in her master's degree between the years of 2013 and 2016 at State University of Campinas (UNICAMP, Campinas-SP, Brazil). During her masters, she worked with children with difficulties in literacy and criticized the pathologization of childhood currently lived in Brazil. Through the union of her knowledge in computing and the experience during her masters, was created the app Língua de Gato.</p>
+        </div>
+    </div>
+
+  <!-- *******  Thanks Row ******* -->
+    <div class="padding-64 colors-orange-white row-padding" id="thanks">
+
+      <div class="quarter">
+        <h2>Special thanks</h2>
+      </div>
+
+      <div class="quarter">
+        <div class="box colors-white-black">
+          <div class="container">
+            <h3>Taiane Moretti</h3>
+            <p>Designer graduated from Facamp (Faculdades de Campinas, Campinas-SP, Brazil) with a specialization in Graphic Design from State University of Campinas (UNICAMP, Campinas-SP, Brazil). She works with web design and is Gabi's mother, who inspired her in the project Língua de Gato.</p>
             <p>
-              Alline Kobayashi, Fernanda Freire<br/>
-              CSBC 2016: DesafIE - 5º Workshop de Desafios da Computação aplicada à Educação<br/>
+              <a class="btn colors-green-white hover-colors-orange-white" href="https://www.linkedin.com/in/taiane-moretti-8146668b" role="button" target="_blank">LinkedIn</a>
+              <a class="btn colors-green-white hover-colors-orange-white" href="https://www.behance.net/taianemoretti" role="button" target="_blank">Portfolio</a>
             </p>
-            <p>
-              <br/>
-            </p>
-
-            <a class="lead" href="http://www.br-ie.org/pub/index.php/wcbie/article/view/6043" target="_blank">Língua de Gato: usando a linguagem de forma divertida</a>
-            <p>
-              Alline Kobayashi, Fernanda Freire, Vítor Rocha, André Scherma<br/>
-              CBIE 2015: V Congresso Brasileiro de Informática na Educação e X Conferência Latino-Americana de Objetos e Tecnologias de Aprendizagem<br/>
-            </p>
-            <p>
-              <br/>
-            </p>
+          </div>
         </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <h2 class="featurette-heading sub-title">Special thanks</h2>
-
-    <div class="row">
-      <div class="col-lg-4">
-        <h2 class="divertir">Taiane Moretti</h2>
-          <p>Designer graduated from Facamp (Faculdades de Campinas, Campinas-SP, Brazil) with a specialization in Graphic Design from State University of Campinas (UNICAMP, Campinas-SP, Brazil). She works with web design and is Gabi's mother, who inspired her in the project Língua de Gato.</p>
-          <p>
-            <a class="btn btn-default" href="https://www.linkedin.com/in/taiane-moretti-8146668b" role="button" target="_blank">LinkedIn</a>
-            <a class="btn btn-default" href="https://www.behance.net/taianemoretti" role="button" target="_blank">Portfolio</a>
-          </p>
       </div>
 
-      <div class="col-lg-4">
-        <h2 class="desenvolver">André Soléo</h2>
-          <p>iOS Developer graduated in Philosophy from the State University of Campinas (UNICAMP, Campinas-SP, Brazil). André worked on the creation of Língua de Gato in 2015 during the iOS Development course at BEPiD (Brazilian Education Project for iOS Development, Campinas-SP, Brazil).</p>
+      <div class="quarter">
+        <div class="box colors-white-black">
+          <div class="container">
+            <h3>André Soléo</h3>
+            <p>iOS Developer graduated in Philosophy from the State University of Campinas (UNICAMP, Campinas-SP, Brazil). André worked on the creation of Língua de Gato in 2015 during the iOS Development course at BEPiD (Brazilian Education Project for iOS Development, Campinas-SP, Brazil).</p>
+          </div>
+        </div>
       </div>
 
-      <div class="col-lg-4">
-        <h2 class="aproximar">Jheniffer Leonardi</h2>
-          <p>iOS Developer, graduated in 2015 in Systems Analysis and Development at Faculty of Technology of São Paulo (FATEC, Americana-SP, Brazil). She believes that children should have their individuality and likes respected. Jheniffer worked on the creation of Língua de Gato in 2015 during the iOS Development course at BEPiD (Brazilian Education Project for iOS Development, Campinas-SP, Brazil).</p>
-          <p>
-            <a class="btn btn-default" href="https://br.linkedin.com/in/jhenifferleonardi" role="button" target="_blank">LinkedIn</a>
-          </p>
+      <div class="quarter">
+        <div class="box colors-white-black">
+          <div class="container">
+            <h3>Jheniffer Leonardi</h3>
+            <p>iOS Developer, graduated in 2015 in Systems Analysis and Development at Faculty of Technology of São Paulo (FATEC, Americana-SP, Brazil). She believes that children should have their individuality and likes respected. Jheniffer worked on the creation of Língua de Gato in 2015 during the iOS Development course at BEPiD (Brazilian Education Project for iOS Development, Campinas-SP, Brazil).</p>
+            <p>
+              <a class="btn colors-green-white hover-colors-orange-white" href="https://br.linkedin.com/in/jhenifferleonardi" role="button" target="_blank">LinkedIn</a>
+            </p>
+          </div>
+        </div>
       </div>
 
     </div>
 
-    <hr class="featurette-divider">
-
-    <h2 class="featurette-heading sub-title">Contact</h2>
-
-    <div class="row featurette">
-      <div id="contato" class="col-md-10">
-        <p class="lead">Do you wanna talk to us? Got a question or sugestion?</p>
-        <p class="lead">Send an email to:  <span class="email-contato">contato@linguadegatoapp.com.br</span></p>
+  <!-- *******  Contact Container ******* -->
+    <div class="padding-64 colors-lightgrey-black container" id="contact">
+      <div class="row">
+        <!-- <div class="col m5"> -->
+          <div class="padding-16">
+            <span class="font-size-xlarge underline-pink">
+              Contact
+            </span>
+          </div>
+          <p>Do you wanna talk to us? Got a question or sugestion?</p>
+          <img src="/images/mail/mail-pink.png" alt="">
+          contato@linguadegatoapp.com.br
+        <!-- </div> -->
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-      <p class="pull-right"><a href="#top">Back to top</a></p>
-      <p>
-        <a href="/privacidade.html" class="footer-item" target="_blank">Privacy</a>|
-        <a href="/suporte.html" class="footer-item" target="_blank">Support</a>
-      </p>
+  <!-- *******  Footer ******* -->
+    <footer class="padding-32 colors-green-white text-center container">
+
+      <!-- AppStore link -->
+      <a href="https://itunes.apple.com/app/id1071864943?mt=8" target="_blank" style="display: inline-block;">
+        <img src="/images/localizable/appStore/appStore-download-en.svg" style="width: 160px">
+      </a>
+
+      <!-- Facebook link -->
+      <a href="https://www.facebook.com/linguadegatoapp" target="_blank" style="display: inline-block;">
+        <img src="/images/facebook.png" style="height: 47px; border-radius: 10px;">
+      </a>
+
+      <!-- Btn to top -->
+      <div class="top-btn float-right">
+        <span class="display-none padding-medium colors-green-white hide-small">Back to top</span>
+        <a class="btn colors-green-white" href="#">
+          <span class="font-size-xlarge">
+              <img src="/images/arrow-up/up-white.png">
+          </span>
+        </a>
+      </div>
     </footer>
 
-  </div><!-- /.container -->
+  <!-- *******  Scripts ******* -->
+    <script>
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openMenu() {
+          var x = document.getElementById("navbarSmall");
+          if (x.className.indexOf("show-block") == -1) {
+              x.className += " show-block";
+          } else {
+              x.className = x.className.replace(" show-block", "");
+          }
+      }
+
+      // Change style of navbar on scroll
+      window.onscroll = function() {myFunction()};
+      function myFunction() {
+          var navbar = document.getElementById("myNavbar");
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+              navbar.className = "navbar left-align animate-top colors-green-white shadow";
+          } else {
+              navbar.className = "navbar left-align colors-white";
+          }
+      }
+    </script>
+
+  </body>
+</html>
 
 
 
@@ -262,7 +295,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/javascripts/jquery.js"></script>
-    <script src="/javascripts/bootstrap.js"></script>
+    <!-- <script src="/javascripts/bootstrap.js"></script> -->
 
     <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg>
   </body>
