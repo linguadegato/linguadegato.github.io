@@ -37,7 +37,7 @@ title: Língua de Gato app
         <!-- 3rd element: home icon (Lingua de Gato logo) -->
         <li onclick="closeMenu()">
           <a href="#" style="padding-top: 0px; padding-bottom: 0px; display: inline-block">
-            <img src="/images/logo/icon-small.png" alt="">
+            <img src="/images/logo/icon-small.png" alt="<%= t(:img_logo_description) %>">
           </a>
         </li>
 
@@ -65,27 +65,27 @@ title: Língua de Gato app
     <div id="header" onclick="closeMenu()" style="position: relative;">
 
       <!-- Background image (big and medium screens)-->
-      <img src="/images/background/placeit-big.png" alt="" class="hide-small background-image">
+      <img src="/images/background/placeit-big.png" alt="<%= t(:img_background_description) %>" class="hide-small background-image">
 
       <!-- Background image (small screen) -->
-      <img src="/images/background/placeit-small.png" alt="" class="hide-medium hide-large background-image">
+      <img src="/images/background/placeit-small.png" alt="<%= t(:img_background_description) %>" class="hide-medium hide-large background-image">
 
       <!-- Banner with logo and icon (big and medium screens) -->
-      <div class="display-right padding-medium hide-small hide-medium" style="width:35%">
+      <div class="display-right padding-medium hide-small hide-medium width-35">
         <div class="padding-large round-large colors-pink-white">
-          <img class="centralize" src="/images/logo/icon-medium.png" style="height: 100px;">
-          <img src="/images/logo/lingua-de-gato-white-small.png" alt="" style="width:100%">
+          <img class="centralize height-100px" src="/images/logo/icon-medium.png" alt="<%= t(:img_logo_description) %>">
+          <img class="width-100" src="/images/logo/lingua-de-gato-white-small.png" alt="<%= t(:logo_description) %>">
           <br><br>
           <a href="https://itunes.apple.com/app/id1071864943?mt=8" target="_blank">
-            <img class="centralize" src="/images/localizable/appStore/appStore-download-en.svg" style="width:160px;">
+            <img class="centralize width-160px" src="<%= t(:appStore_image) %>" alt="<%= t(:img_appStore_description) %>">
           </a>
         </div>
       </div>
 
       <!-- Banner with logo and icon (small screen) -->
-      <div class="padding-medium hide-large" style="width:100%">
+      <div class="padding-medium hide-large width-100">
         <div class="padding-large round-large colors-pink-white">
-          <img src="/images/logo/lingua-de-gato-white-small.png" alt="" style="width:100%">
+          <img src="/images/logo/lingua-de-gato-white-small.png" alt="<%= t(:img_logo_description) %>" class="width-100"">
         </div>
       </div>
 
@@ -97,19 +97,19 @@ title: Língua de Gato app
       <div class="row"><br>
 
         <div class="third">
-          <img src="/images/pillars/fun.jpg" alt="Fun" style="width:45%" class="circle">
+          <img src="/images/pillars/fun.jpg" alt="<%= t(:img_pillar_fun) %>" class="circle width-45">
           <h3><%= t(:pillar1_title) %></h3>
           <p><%= t(:pillar1_description) %></p>
         </div>
 
         <div class="third">
-          <img src="/images/pillars/teach.jpg" alt="Teach" style="width:45%" class="circle">
+          <img src="/images/pillars/teach.jpg" alt="<%= t(:img_pillar_teach) %>" class="circle width-45">
           <h3><%= t(:pillar2_title) %></h3>
           <p><%= t(:pillar2_description) %></p>
         </div>
 
         <div class="third">
-          <img src="/images/pillars/together.jpg" alt="Together" style="width:45%" class="circle">
+          <img src="/images/pillars/together.jpg" alt="<%= t(:img_pillar_together) %>" class="circle width-45">
           <h3><%= t(:pillar3_title) %></h3>
           <p><%= t(:pillar3_description) %></p>
         </div>
@@ -154,7 +154,7 @@ title: Língua de Gato app
         <br>
 
         <div class="third margin-bottom">
-          <img src="/images/team/alline.png" alt="Alline Kobayashi" style="width:45%" class="circle">
+          <img src="/images/team/alline.png" alt="Alline Kobayashi" class="circle width-45">
           <h3><%= t(:team1_name) %></h3>
           <a class="btn colors-pink-white hover-colors-blue-white" href="https://br.linkedin.com/in/alline-kobayashi-b9083345" role="button" target="_blank">LinkedIn</a>
           <a class="btn colors-pink-white hover-colors-blue-white" href="http://lattes.cnpq.br/8071107008406828" role="button" target="_blank">Lattes</a>
@@ -218,7 +218,7 @@ title: Língua de Gato app
             </span>
           </div>
           <p><%= t(:contact_message) %></p>
-          <img src="/images/mail/mail-pink.png" alt="">
+          <img src="/images/mail/mail-pink.png" alt="<%= t(:img_contact_description) %>">
           contato@linguadegatoapp.com.br
         <!-- </div> -->
       </div>
@@ -229,12 +229,12 @@ title: Língua de Gato app
 
       <!-- AppStore link -->
       <a href="https://itunes.apple.com/app/id1071864943?mt=8" target="_blank" style="display: inline-block;">
-        <img src="/images/localizable/appStore/appStore-download-en.svg" style="width: 160px">
+        <img src="<%= t(:appStore_image) %>" class="width-160px" alt="<%= t(:img_appStore_description) %>">
       </a>
 
       <!-- Facebook link -->
       <a href="https://www.facebook.com/linguadegatoapp" target="_blank" style="display: inline-block;">
-        <img src="/images/facebook.png" style="height: 47px; border-radius: 10px;">
+        <img src="/images/facebook.png" class="facebook-img" alt="<%= t(:img_facebook_description) %>">
       </a>
 
       <!-- Btn to top -->
@@ -242,7 +242,7 @@ title: Língua de Gato app
         <span class="display-none padding-medium colors-green-white hide-small"><%= t(:top_message) %></span>
         <a class="btn colors-green-white" href="#">
           <span class="font-size-xlarge">
-              <img src="/images/arrow-up/up-white.png">
+              <img src="/images/arrow-up/up-white.png" alt="<%= t(:img_up_description) %>">
           </span>
         </a>
       </div>
