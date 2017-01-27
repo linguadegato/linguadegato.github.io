@@ -62,13 +62,16 @@ title: Língua de Gato app
     </div>
 
   <!-- *******  Header ******* -->
-    <div id="header" onclick="closeMenu()">
+    <div id="header" onclick="closeMenu()" style="position: relative;">
 
-      <!-- Background image -->
-      <img src="/images/background/placeit-1280height.png" alt="" style="width:100%;opacity: 0.7;min-height: 350px;max-height: 600px;">
+      <!-- Background image (big and medium screens)-->
+      <img src="/images/background/placeit-big.png" alt="" class="hide-small background-image">
 
-      <!-- Banner with logo and icon (big screen) -->
-      <div class="display-right padding-medium hide-small" style="width:35%">
+      <!-- Background image (small screen) -->
+      <img src="/images/background/placeit-small.png" alt="" class="hide-medium hide-large background-image">
+
+      <!-- Banner with logo and icon (big and medium screens) -->
+      <div class="display-right padding-medium hide-small hide-medium" style="width:35%">
         <div class="padding-large round-large colors-pink-white">
           <img class="centralize" src="/images/logo/icon-medium.png" style="height: 100px;">
           <img src="/images/logo/lingua-de-gato-white-small.png" alt="" style="width:100%">
@@ -80,7 +83,7 @@ title: Língua de Gato app
       </div>
 
       <!-- Banner with logo and icon (small screen) -->
-      <div class="padding-medium hide-medium hide-large" style="width:100%">
+      <div class="padding-medium hide-large" style="width:100%">
         <div class="padding-large round-large colors-pink-white">
           <img src="/images/logo/lingua-de-gato-white-small.png" alt="" style="width:100%">
         </div>
