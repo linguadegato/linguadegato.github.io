@@ -237,6 +237,14 @@ abbr[title]{
   box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important
 }
 
+/*----------Backgroud image----------*/
+.background-image{
+  width:100%;
+  opacity: 0.7;
+  min-height: 350px;
+  max-height: 600px;
+}
+
 /*----------Navbar: menu superior----------*/
 .navbar{
   list-style-type:none;
