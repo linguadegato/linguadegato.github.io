@@ -123,6 +123,23 @@ abbr[title]{
     border-radius: 8px!important;
 }
 
+/*----------Widths and Heights----------*/
+.width-35{
+  width:35%
+}
+.width-45{
+  width:45%
+}
+.width-100{
+  width:100%
+}
+.width-160px{
+  width:160px
+}
+
+.height-100px{
+  height: 100px;
+}
 /*----------Sections colors------------*/
 .colors-white{
     color: #fff
@@ -489,7 +506,8 @@ abbr[title]{
   margin-left: auto;
   margin-right: auto;
 }
-/*--------------------*/
+
+/*----------Menu bar behavior----------*/
 .animate-top {
     position: relative;
     -webkit-animation: animatetop 0.4s;
@@ -498,15 +516,13 @@ abbr[title]{
 .shadow{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
 }
-.w3-navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+
+/*----------Facebook img----------*/
+.facebook-img{
+  height: 47px;
+  border-radius: 10px;
 }
-.w3-top {
-    top: 0;
-}
+
 
 /*dfn{font-style:italic}mark{background:#ff0;color:#000}*/
 small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
