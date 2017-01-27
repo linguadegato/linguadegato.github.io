@@ -125,25 +125,29 @@ title: Língua de Gato app
       </div>
 
       <div class="quarter">
-        <div class="box colors-white-black">
-          <div class="container">
-            <h3><%= t(:article2_title) %></h3>
-            <p class="colors-green"><%= t(:article_pt_message) %></p>
-            <h4><%= t(:article2_event) %></h4>
-            <p><%= t(:article2_autor) %></p>
+        <a href="<%= t(:article2_link) %>" target="_blank" style="text-decoration: none">
+          <div class="box colors-white-black hover-colors-orange-white">
+            <div class="container">
+              <h4><%= t(:article2_title) %></h4>
+              <%= t(:article2_autor) %>
+              <p><%= t(:article_pt_message) %></p>
+              <h5><%= t(:article2_event) %></h5>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="quarter">
-        <div class="box colors-white-black">
-          <div class="container">
-            <h3><%= t(:article1_title) %></h3>
-            <p class="colors-green"><%= t(:article_pt_message) %></p>
-            <h4><%= t(:article1_event) %></h4>
-            <p><%= t(:article1_autor) %></p>
+        <a href="<%= t(:article1_link) %>" target="_blank" style="text-decoration: none">
+          <div class="box colors-white-black hover-colors-orange-white">
+            <div class="container">
+              <h4><%= t(:article1_title) %></h4>
+              <%= t(:article1_autor) %>
+              <p><%= t(:article_pt_message) %></p>
+              <h5><%= t(:article1_event) %></h5>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
 
     </div>
