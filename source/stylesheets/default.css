@@ -154,6 +154,10 @@ abbr[title]{
 .height-100px{
   height: 100px;
 }
+
+.height-50px{
+  height: 50px;
+}
 /*----------Sections colors------------*/
 .colors-black,.hover-colors-black:hover{
     color: #000
