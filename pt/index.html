@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Língua de Gato app</title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    <!-- <link href="/stylesheets/bootstrap.css" rel="stylesheet" />
+    <link href="/stylesheets/carousel.css" rel="stylesheet" /> -->
+
+    <!-- Custom Lingua de Gato -->
+    <link href="/stylesheets/index.css" rel="stylesheet" />
+    <link href="/stylesheets/iphone.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/stylesheets/default.css">
+
+  <body>
+
+  <!-- ******* Navbar ******* -->
+    <div class="top">
+
+      <ul class="navbar left-align colors-white" id="myNavbar">
+
+        <!-- 1st element: menu icon [small screen] -->
+        <li class="hide-medium hide-large float-right opennav">
+          <a href="javascript:void(0);" onclick="openMenu()">
+            <!-- Icon of the menu (3 horizontal bars) on the right side on small screens-->
+            <div class="menu-icon">
+              <div class="menu-bar1"></div>
+              <div class="menu-bar2"></div>
+              <div class="menu-bar3"></div>
+            </div>
+          </a>
+        </li>
+
+        <!-- 2nd element: language -->
+        <li class=" float-right opennav">
+          <a class="hover-colors-white-black" href="..">
+            ENGLISH
+          </a>
+        </li>
+
+        <!-- 3rd element: home icon (Lingua de Gato logo) -->
+        <li onclick="closeMenu()">
+          <a href="#" style="padding-top: 0px; padding-bottom: 0px; display: inline-block">
+            <img src="/images/logo/icon-small.png" alt="Logo do aplicativo: desenho do rosto de um gatinho branco com a língua rosa">
+          </a>
+        </li>
+
+        <!-- Other element: menu options (will not appear on small screen) -->
+        <li class="hide-small"><a href="#articles" class="hover-colors-white-black">ARTIGOS</a></li>
+        <li class="hide-small"><a href="#team" class="hover-colors-white-black">QUEM SOMOS</a></li>
+        <li class="hide-small"><a href="#thanks" class="hover-colors-white-black">AGRADECIMENTOS</a></li>
+        <li class="hide-small"><a href="#contact" class="hover-colors-white-black">CONTATO</a></li>
+        <li class="hide-small"><a href="https://medium.com/linguadegato-br" class="hover-colors-white-black" target="_blank">BLOG</a></li>
+
+     </ul>
+
+      <!-- Navbar on small screens (change classes when it is suposed to appear or not)-->
+      <div id="navbarSmall" class="hide hide-large hide-medium" onclick="closeMenu()">
+        <ul class="navbar left-align colors-green-white">
+          <li><a href="#articles" class="hover-colors-white-black">ARTIGOS</a></li>
+          <li><a href="#team" class="hover-colors-white-black">QUEM SOMOS</a></li>
+          <li><a href="#thanks" class="hover-colors-white-black">AGRADECIMENTOS</a></li>
+          <li><a href="#contact" class="hover-colors-white-black">CONTATO</a></li>
+          <li><a href="https://medium.com/linguadegato-br" class="hover-colors-white-black" target="_blank">BLOG</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  <!-- *******  Header ******* -->
+    <div id="header" onclick="closeMenu()" style="position: relative;">
+
+      <!-- Background image (big and medium screens)-->
+      <img src="/images/background/placeit-big.png" alt="Foto de uma mulher com duas crianças mostrando o iPad com a tela inicial do Língua de Gato app" class="hide-small background-image">
+
+      <!-- Background image (small screen) -->
+      <img src="/images/background/placeit-small.png" alt="Foto de uma mulher com duas crianças mostrando o iPad com a tela inicial do Língua de Gato app" class="hide-medium hide-large background-image">
+
+      <!-- Banner with logo and icon (big and medium screens) -->
+      <div class="display-right padding-medium hide-small hide-medium width-35">
+        <div class="padding-large round-large colors-pink-white">
+          <img class="centralize height-100px" src="/images/logo/icon-medium.png" alt="Logo do aplicativo: desenho do rosto de um gatinho branco com a língua rosa">
+          <img class="width-100" src="/images/logo/lingua-de-gato-white-small.png" alt="Letreiro escrito Língua de Gato">
+          <br><br>
+          <a href="https://itunes.apple.com/app/id1071864943?mt=8" target="_blank">
+            <img class="centralize width-160px" src="/images/localizable/appStore/appStore-download-pt.svg" alt="Baixar na AppStore">
+          </a>
+        </div>
+      </div>
+
+      <!-- Banner with logo and icon (small screen) -->
+      <div class="padding-medium hide-large width-100">
+        <div class="padding-large round-large colors-pink-white">
+          <img src="/images/logo/lingua-de-gato-white-small.png" alt="Logo do aplicativo: desenho do rosto de um gatinho branco com a língua rosa" class="width-100"">
+        </div>
+      </div>
+
+    </div>
+
+  <!-- *******  Pillars Container ******* -->
+    <div class="padding-64 text-center container" id="pillars" onclick="closeMenu()">
+
+      <div class="row"><br>
+
+        <div class="third">
+          <img src="/images/pillars/fun.jpg" alt="Tela de quando termina um jogo no Língua de Gato: desenho do logo do aplicativo, com o fundo azul e os escritos: Parabéns! Você completou as palavras!" class="circle width-45">
+          <h3>Divertir</h3>
+          <p>O Língua de Gato permite a criação de palavras-cruzadas para que as crianças divirtam-se no universo da leitura e da escrita a partir de elementos a sua volta.</p>
+        </div>
+
+        <div class="third">
+          <img src="/images/pillars/teach.jpg" alt="Tela do jogo de palavras cruzadas mostrando três fotos como dicas: gatos, um cachorro e uma criança. A palavra gatos está preenchida na cruzadinhas e as letras das outras palavras estão espalhadas em volta do jogo." class="circle width-45">
+          <h3>Desenvolver</h3>
+          <p>Considerando a complexidade da aquisição da leitura e da escrita e as particularidades de cada criança, criamos um ambiente customizável no qual as palavras-cruzadas podem ser construídas a partir de fotos e/ou áudios.</p>
+        </div>
+
+        <div class="third">
+          <img src="/images/pillars/together.jpg" alt="Foto tirada de cima mostrando um adulto e duas crianças brincando com o Língua de Gato no iPad." class="circle width-45">
+          <h3>Aproximar</h3>
+          <p>Acreditamos profundamente que o aprendizado se dá com a participação do outro. Assim, desejamos enriquecer a interação entre as crianças e seus pais, professores e amigos, por meio do Língua de Gato.</p>
+        </div>
+
+      </div>
+    </div>
+
+  <!-- *******  Articles Row ******* -->
+    <div class="padding-64 colors-blue-white row-padding" id="articles" onclick="closeMenu()">
+
+      <div class="quarter">
+        <h2>Artigos relacionados</h2>
+      </div>
+
+      <div class="quarter">
+        <a href="http://ebooks.pucrs.br/edipucrs/anais/csbc/assets/2016/desafie!/13.pdf" target="_blank" style="text-decoration: none">
+          <div class="box colors-white-black hover-colors-orange-white">
+            <div class="container">
+              <h4>Fala, Leitura e Escrita em Aplicativos Móveis: Desafios de uma Abordagem Discursiva</h4>
+              Alline Kobayashi, Fernanda Freire
+              <p></p>
+              <h5>CSBC 2016: DesafIE - 5º Workshop de Desafios da Computação aplicada à Educação</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="quarter">
+        <a href="http://www.br-ie.org/pub/index.php/wcbie/article/view/6043" target="_blank" style="text-decoration: none">
+          <div class="box colors-white-black hover-colors-orange-white">
+            <div class="container">
+              <h4>Língua de Gato: usando a linguagem de forma divertida</h4>
+              Alline Kobayashi, Fernanda Freire, Vítor Rocha, André Scherma
+              <p></p>
+              <h5>CBIE 2015: V Congresso Brasileiro de Informática na Educação e X Conferência Latino-Americana de Objetos e Tecnologias de Aprendizagem</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  <!-- *******  Team Row ******* -->
+    <div class="padding-64 text-center row-padding" id="team" onclick="closeMenu()">
+        <h2>QUEM SOMOS</h2>
+        <br>
+
+        <div class="third margin-bottom">
+          <img src="/images/team/alline.png" alt="Alline Kobayashi" class="circle width-45">
+          <h3>Alline Kobayashi</h3>
+          <a class="btn colors-pink-white hover-colors-blue-white" href="https://br.linkedin.com/in/alline-kobayashi-b9083345" role="button" target="_blank">LinkedIn</a>
+          <a class="btn colors-pink-white hover-colors-blue-white" href="http://lattes.cnpq.br/8071107008406828" role="button" target="_blank">Lattes</a>
+        </div>
+
+        <div class="third margin-bottom">
+          <p>Brasileira morando em Budapeste desde novembro de 2016, é apaixonada por crianças, educação e tecnologia. Graduou-se em Ciência da Computação e resolveu aventurar-se pela área de humanas ao cursar o mestrado em Neurolinguística entre os anos de 2013 e 2016, ambos na Universidade Estadual de Campinas (UNICAMP, Campinas-SP, Brasil). Duranto o mestrado, trabalhou com crianças e jovens com dificuldades escolares relativas à linguagem e atuou na contra mão do processo de patologização vivido atualmente no Brasil.</p>
+        </div>
+    </div>
+
+  <!-- *******  Thanks Row ******* -->
+    <div class="padding-64 colors-orange-white row-padding" id="thanks" onclick="closeMenu()">
+
+      <div class="quarter">
+        <h2>Agradecimentos Especiais</h2>
+      </div>
+
+      <div class="quarter">
+        <div class="box colors-white-black">
+          <div class="container">
+            <h3>Taiane Moretti</h3>
+            <p>Designer formada pela Facamp (Faculdades de Campinas, Campinas-SP, Brasil) com especialização em Design Gráfico pela Universidade Estadual de Campinas (UNICAMP, Campinas-SP, Brasil). Trabalha com web design e é mãe da Gabi, que a inspirou no projeto Língua de Gato.</p>
+            <p>
+              <a class="btn colors-green-white hover-colors-orange-white" href="https://www.linkedin.com/in/taiane-moretti-8146668b" role="button" target="_blank">LinkedIn</a>
+              <a class="btn colors-green-white hover-colors-orange-white" href="https://www.behance.net/taianemoretti" role="button" target="_blank">Portfólio</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="quarter">
+        <div class="box colors-white-black">
+          <div class="container">
+            <h3>André Soléo</h3>
+            <p>Desenvolvedor iOS formado em Filosofia pela Universidade Estadual de Campinas (UNICAMP, Campinas-SP, Brasil). André trabalhou na criação do Língua de Gato durante o ano de 2015 quando cursava o curso de iOS no BEPiD (Brazilian Education Project for iOS Development, Campinas-SP, Brasil).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="quarter">
+        <div class="box colors-white-black">
+          <div class="container">
+            <h3>Jheniffer Leonardi</h3>
+            <p>Desenvolvedora iOS, formada em 2015 em Análise e Desenvolvimento de Sistemas pela FATEC Americana. Acredita que crianças devem ter suas particularidades e gostos respeitados. Jheniffer trabalhou na criação do Língua de Gato durante o ano de 2015 quando cursava o curso de iOS no BEPiD (Brazilian Education Project for iOS Development, Campinas-SP, Brasil).</p>
+            <p>
+              <a class="btn colors-green-white hover-colors-orange-white" href="https://br.linkedin.com/in/jhenifferleonardi" role="button" target="_blank">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  <!-- *******  Contact Container ******* -->
+    <div class="padding-64 colors-lightgrey-black container" id="contact" onclick="closeMenu()">
+      <div class="row">
+        <!-- <div class="col m5"> -->
+          <div class="padding-16">
+            <span class="font-size-xlarge underline-pink">
+              Contato
+            </span>
+          </div>
+          <p>Quer conversar conosco? Tem alguma dúvida ou sugestão?</p>
+          <img src="/images/mail/mail-pink.png" alt="Ícone de um envelope rosa com fundo branco">
+          contato@linguadegatoapp.com.br
+        <!-- </div> -->
+      </div>
+    </div>
+
+  <!-- *******  Footer ******* -->
+    <footer class="padding-32 colors-green-white text-center container" onclick="closeMenu()">
+
+      <!-- AppStore link -->
+      <a href="https://itunes.apple.com/app/id1071864943?mt=8" target="_blank" style="display: inline-block;">
+        <img src="/images/localizable/appStore/appStore-download-pt.svg" class="width-160px" alt="Baixar na AppStore">
+      </a>
+
+      <!-- Facebook link -->
+      <a href="https://www.facebook.com/linguadegatoapp" target="_blank" style="display: inline-block;">
+        <img src="/images/facebook.png" class="facebook-img" alt="Link para a página do Língua de Gato no Facebok">
+      </a>
+
+      <!-- Btn to top -->
+      <div class="top-btn float-right">
+        <span class="display-none padding-medium colors-green-white hide-small">Voltar para o início</span>
+        <a class="btn colors-green-white" href="#">
+          <span class="font-size-xlarge">
+              <img src="/images/arrow-up/up-white.png" alt="Seta para retornar ao topo da página">
+          </span>
+        </a>
+      </div>
+    </footer>
+
+  <!-- *******  Scripts ******* -->
+    <script>
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openMenu() {
+          var x = document.getElementById("navbarSmall");
+          if (x.className.indexOf("show-block") == -1) {
+              x.className += " show-block";
+          } else {
+              x.className = x.className.replace(" show-block", "");
+          }
+      }
+
+      // Modal Image Gallery
+      function closeMenu(){
+        var smallMenu = document.getElementById("navbarSmall");
+        if (smallMenu.style.display != "none"){
+          smallMenu.className = smallMenu.className.replace(" show-block", "");
+        }
+      }
+
+
+      // Change style of navbar on scroll
+      window.onscroll = function() {myFunction()};
+      function myFunction() {
+          var navbar = document.getElementById("myNavbar");
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+              navbar.className = "navbar left-align animate-top colors-green-white shadow";
+          } else {
+              navbar.className = "navbar left-align colors-white";
+          }
+      }
+    </script>
+
+  </body>
+</html>
+
+
+
+    <!-- Bootstrap core JavaScript`
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/javascripts/jquery.js"></script>
+    <!-- <script src="/javascripts/bootstrap.js"></script> -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg>
+  </body>
+</html>

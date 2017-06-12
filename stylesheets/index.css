@@ -1,99 +1,113 @@
-.navbar-wrapper .navbar-header {
-    float: right;
+/*----------Backgroud image----------*/
+.background-image{
+  width:100%;
+  opacity: 0.7;
+  min-height: 350px;
+  max-height: 600px;
 }
 
-.navbar-header .navbar-brand {
-    color: white;
-}
-
-.navbar-wrapper {
-    z-index: 2000;
-}
-
-.facebook-icon {
-    width: 50px;
-    margin-top: 10px;
-}
-
-.header {
-    top: 25px;
-    position: absolute;
-    left: 50%;
-    z-index: 1000;
-}
-
-.header .logo {
-    width: 80px;
-    margin-right: 10px;
-}
-
-.header .title {
-    width: 350px;
-    margin-right: 10px;
-}
-
-.appstore-download {
-    width: 160px;
-    display: block;
-    margin: auto;
-}
-
-.header .icon {
-    margin-right: 20px;
-}
-
-.header-content {
-    position: relative;
-    left: -50%;
-}
-
-.carousel .item {
-    height: 550px;
-    background-color: #2EAFDB;
-    background-image: url('/images/background.png');
-    background-size: cover;
-}
-
-.ipad-screen {
-    width: 80%;
-    margin-bottom: -10%;
-}
-
-h2.divertir {
-    color: #F7A93C;
-}
-
-h2.desenvolver {
-    color: #EA5194;
-}
-
-h2.aproximar {
-    color: #AAC821;
-}
-
-.video {
-    display: block;
-    margin: auto;
-    width: 650px;
-    height: 450px;
-}
-
-h2.sub-title {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 50px;
-}
-
-.email-contato {
-    color: #2EAFDB;
-}
-
-footer {
-    margin-top: 50px;
-}
-
-footer .footer-item {
+/*----------Menu bar icon (3 parallel lines) ----------*/
+.menu-icon {
     display: inline-block;
-    margin-left: 5px;
-    margin-right: 5px;
+    cursor: pointer;
+}
+.menu-bar1, .menu-bar2, .menu-bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/*----------Menu bar behavior----------*/
+.animate-top {
+    position: relative;
+    -webkit-animation: animatetop 0.4s;
+    animation: animatetop 0.4s;
+}
+
+/*----------Facebook img----------*/
+.facebook-img{
+  height: 47px;
+  border-radius: 10px;
+}
+
+/*----------Navbar: menu superior----------*/
+.navbar{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden
+}
+.navbar li{
+  float:left
+}
+.navbar li a{
+  display:block;
+  padding:8px 16px
+}
+/*.navbar li a:hover{
+  color:#000;
+  background-color:#ccc
+}*/
+/*.navbar li a img{
+  width: 35px;
+}*/
+
+.navbar a{
+  text-decoration:none!important
+}
+
+/*.navbar:hover,.navbar:first-child:hover{
+  background-color:#ccc;
+  color:#000
+}*/
+
+.navbar .opennav .float-right{
+  float:right!important
+}
+
+/*----------Responsive modifications: navbar ----------*/
+@media screen and (max-width:600px){
+  .navbar li:not(.opennav){
+    float:none;
+    width:100%!important
+  }
+  .navbar li.float-right{
+    float:none!important
+  }
+}
+
+@media screen and (max-width:600px){
+  .navbar{
+    position:relative
+  }
+}
+
+@media screen and (max-width:600px){
+  .navbar{
+    text-align:center
+  }
+}
+
+/*----------Navbar on small screeen----------*/
+.navbar .opennav.float-right {
+  float: right!important;
+}
+.btn,.closenav,.opennav{
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
+.opennav,.closenav{
+  color:inherit
+}
+
+.opennav:hover,.closenav:hover{
+  cursor:pointer;
+  opacity:0.8
 }
