@@ -22,6 +22,7 @@ pt:
   menu3: "AGRADECIMENTOS"
   menu4: "CONTATO"
   menu5: "BLOG"
+  blog_url: "https://medium.com/linguadegato-br"
 
   section1_title: "Artigos relacionados"
   section2_title: "QUEM SOMOS"
